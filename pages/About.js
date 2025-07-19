@@ -1,5 +1,4 @@
 import { Page } from './Page.js';
-import { Header } from '../components/Header.js';
 
 export class AboutPage extends Page {
     constructor(container) {

@@ -1,5 +1,4 @@
 import { Page } from './Page.js';
-import { Header } from '../components/Header.js';
 
 export class IndexPage extends Page {
     constructor(container) {
@@ -47,6 +46,9 @@ export class IndexPage extends Page {
                 </section>
             </div>
         `;
+        const headerContainer = this.container.querySelector('#header-container');
+        const header = new Header(headerContainer);
+        header.render();
         this.addEventListeners();
     }
 

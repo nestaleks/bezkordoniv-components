@@ -1,5 +1,4 @@
 import { Page } from './Page.js';
-import { Header } from '../components/Header.js';
 
 export class LoginPage extends Page {
     constructor(container) {
@@ -18,7 +17,6 @@ export class LoginPage extends Page {
     render() {
         this.container.innerHTML = `
             <div class="page-container">
-                <div id="header-container"></div>
                 <main class="main">
                     <div class="container">
                         <div class="auth-container">

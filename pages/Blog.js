@@ -8,5 +8,8 @@ export class BlogPage extends Page {
                 <p>Здесь будут статьи блога.</p>
             </div>
         `;
+        const headerContainer = this.container.querySelector('#header-container');
+        const header = new Header(headerContainer);
+        header.render();
     }
 }

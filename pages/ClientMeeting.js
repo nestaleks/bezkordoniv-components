@@ -8,5 +8,8 @@ export class ClientMeetingPage extends Page {
                 <p>Здесь будет содержимое</p>
             </div>
         `;
+        const headerContainer = this.container.querySelector('#header-container');
+        const header = new Header(headerContainer);
+        header.render();
     }
 }

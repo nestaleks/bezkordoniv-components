@@ -30,6 +30,7 @@ import { ExpertMeetingPage } from './pages/ExpertMeeting.js';
 import { ExpertMeetingsPage } from './pages/ExpertMeetings.js';
 import { ExpertProfilePage } from './pages/ExpertProfile.js';
 import { ExpertWalletPage } from './pages/ExpertWallet.js';
+import { ExpertsPage } from './pages/ExpertsPage.js';
 import { ExpertPage } from './pages/ExpertPage.js';
 
 // Импорт страницы дашборда и 404
@@ -70,6 +71,7 @@ class App {
         this.router.addRoute('/client-wallet', ClientWalletPage);
 
         // Маршруты эксперта (сначала специфичные, потом общие)
+        this.router.addRoute('/experts', ExpertsPage);
         this.router.addRoute('/expert/:id', ExpertPage);
         this.router.addRoute('/expert-chat', ExpertChatPage);
         this.router.addRoute('/expert-meeting/:id', ExpertMeetingPage);
