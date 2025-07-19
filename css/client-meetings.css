@@ -1,0 +1,158 @@
+/* client-meetings PAGE */
+
+.client-meetings-title{
+    color: var(--black-50);
+    margin-bottom: 20px;
+}
+
+.client-meetings-list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.client-meetings-item{
+    border-radius: 8px;
+    background-color: var(--white-100);
+    transition: all 0.3s ease;
+}
+
+.client-meetings-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.client-meetings-item-header{
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--primary-07);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 10px;
+    line-height: 15px;
+}
+.client-meetings-item-date{
+    display: flex;
+    gap: 6px;
+    width: 78px;
+}
+.client-meetings-item-time{
+    display: flex;
+    gap: 6px;
+    width: 58px;
+}
+.client-meetings-item-location{
+    display: flex;
+    gap: 6px;
+}
+.client-meetings-item-body{
+    border: 1px solid var(--black-10);
+    border-radius: 8px;
+}
+.client-meetings-item-info{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.client-meetings-item-expert{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+.client-meetings-item-img{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.client-meetings-item-expert-name{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+}
+.client-meetings-item-expert-speciality{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.client-meetings-item-payments{
+    display: flex;
+    gap: 10px;
+}
+.client-meetings-item-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--black-10);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+}
+.client-meetings-item-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 12px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    
+}
+.client-meetings-item-cost img,
+.client-meetings-item-pay img{
+    width: 16px;
+    height: 16px;
+}
+.client-meetings-item-status-box{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid var(--black-10);
+    border-bottom: 1px solid var(--black-10);
+}
+.client-meetings-item-status{
+    width: 100%;
+    border-right: 1px solid var(--black-10);
+    padding: 12px;
+}
+.client-meetings-item-payment-status{
+    width: 100%;
+    padding: 12px;
+}
+.client-meetings-item-status p,
+.client-meetings-item-payment-status p{
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--black-50);
+}
+.client-meetings-item-buttons{
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+}
+.client-meetings-item-buttons button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 12px;
+    height: 42px;
+}
+.client-meetings-item-buttons img{
+    width: 16px;
+    height: 16px;
+}
+.client-meetings-item-buttons p{
+    font-weight: 800;
+    line-height: 21px;
+}

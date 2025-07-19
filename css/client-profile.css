@@ -1,0 +1,74 @@
+.client-profile-content{
+    background-color: var(--white-100);
+    border: 1px solid var(--black-10);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.client-profile-photo{
+    padding-top: 12px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+.client-profile-avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 240px;
+    object-fit: cover;
+}
+.client-profile-photo-actions{
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-profile-photo-actions button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: var(--white-100);
+    padding: 12px;
+    border: 1px solid var(--black-10);
+
+}
+.client-profile-main,
+.client-profile-contacts,
+.client-profile-password{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+}
+
+
+
+
+.client-profile-buttons-save{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 10px;
+    width: 100%;
+    border-top: 1px solid var(--black-10);
+}
+
+.client-profile-buttons-save button{
+    width: 100%;
+    padding: 10px 26px;
+}
+
+
+
+@media (max-width: 640px) {
+    .client-profile-button-main,
+    .client-profile-button-contacts,
+    .client-profile-button-password{
+        font-size: 12px;
+        line-height: 1;
+}
+}
