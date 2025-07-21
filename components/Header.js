@@ -70,7 +70,6 @@ export class Header extends Component {
 
                     <!-- Menu navigation -->
                     <nav class="menu">
-                        <!-- General menu (always visible) -->
                         <ul class="menu-list">
                             <!-- General menu items (available to everyone) -->
                             <li class="menu-item">
@@ -105,33 +104,63 @@ export class Header extends Component {
                                     <p class="menu-item-text">Експерти</p>
                                 </a>
                             </li>
-
-                            <!-- menu items for authorized users only -->
-                            <li class="menu-item menu-if-login">
-                                <a href="./client-meetings.html" class="menu-link">
+                            <li class="menu-item menu-for-expert">
+                                <a href="/clients" class="menu-link" data-link>
+                                    <svg class="menu-icon" width="22.000046" height="20.000000" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M17 19C17 16.87 16.15 14.84 14.65 13.34C13.15 11.84 11.12 11 9 11C6.87 11 4.84 11.84 3.34 13.34C1.84 14.84 1 16.87 1 19M9 11C6.23 11 4 8.76 4 6C4 3.23 6.23 1 9 1C11.76 1 14 3.23 14 6C14 8.76 11.76 11 9 11M21 17.99C21 14.62 19 11.49 17 9.99C17.65 9.5 18.18 8.85 18.53 8.11C18.87 7.36 19.03 6.55 18.99 5.72C18.94 4.9 18.7 4.11 18.27 3.4C17.84 2.7 17.25 2.11 16.54 1.69" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                    </svg>
+                                    <p class="menu-item-text">Клієнти</p>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-for-expert">
+                                <a href="/expert-meetings" class="menu-link" data-link>
                                     <svg class="menu-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.33333 1.33333V3.99999M9.66667 1.33333V3.99999M13 8.66666V3.99999C13 3.64637 12.8595 3.30723 12.6095 3.05719C12.3594 2.80714 12.0203 2.66666 11.6667 2.66666H2.33333C1.97971 2.66666 1.64057 2.80714 1.39052 3.05719C1.14048 3.30723 1 3.64637 1 3.99999V13.3333C1 13.687 1.14048 14.0261 1.39052 14.2761C1.64057 14.5262 1.97971 14.6667 2.33333 14.6667H7.66667M1 6.66666H13M9.66667 12.6667H13.6667M11.6667 10.6667V14.6667" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <p class="menu-item-text">Мої зустрічі</p>
                                 </a>
                             </li>
-                            <li class="menu-item menu-if-login">
-                                <a href="#" class="menu-link">
+                            <li class="menu-item menu-for-client">
+                                <a href="/client-meetings" class="menu-link" data-link>
+                                    <svg class="menu-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.33333 1.33333V3.99999M9.66667 1.33333V3.99999M13 8.66666V3.99999C13 3.64637 12.8595 3.30723 12.6095 3.05719C12.3594 2.80714 12.0203 2.66666 11.6667 2.66666H2.33333C1.97971 2.66666 1.64057 2.80714 1.39052 3.05719C1.14048 3.30723 1 3.64637 1 3.99999V13.3333C1 13.687 1.14048 14.0261 1.39052 14.2761C1.64057 14.5262 1.97971 14.6667 2.33333 14.6667H7.66667M1 6.66666H13M9.66667 12.6667H13.6667M11.6667 10.6667V14.6667" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="menu-item-text">Мої зустрічі</p>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-for-expert">
+                                <a href="/expert-wallet" class="menu-link" data-link>
                                     <svg class="menu-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.1333 8.33333H11.14M4.46665 3.66667H12.4667C12.8203 3.66667 13.1594 3.80714 13.4095 4.05719C13.6595 4.30724 13.8 4.64638 13.8 5V11.6667C13.8 12.0203 13.6595 12.3594 13.4095 12.6095C13.1594 12.8595 12.8203 13 12.4667 13H3.13332C2.7797 13 2.44056 12.8595 2.19051 12.6095C1.94046 12.3594 1.79999 12.0203 1.79999 11.6667V2.33333C1.79999 1.97971 1.94046 1.64057 2.19051 1.39052C2.44056 1.14048 2.7797 1 3.13332 1H12.4667" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <p class="menu-item-text">Гаманець</p>
                                 </a>
                             </li>
-                            <li class="menu-item menu-if-login">
-                                <a href="#" class="menu-link">
+                            <li class="menu-item menu-for-client">
+                                <a href="/client-wallet" class="menu-link" data-link>
+                                    <svg class="menu-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.1333 8.33333H11.14M4.46665 3.66667H12.4667C12.8203 3.66667 13.1594 3.80714 13.4095 4.05719C13.6595 4.30724 13.8 4.64638 13.8 5V11.6667C13.8 12.0203 13.6595 12.3594 13.4095 12.6095C13.1594 12.8595 12.8203 13 12.4667 13H3.13332C2.7797 13 2.44056 12.8595 2.19051 12.6095C1.94046 12.3594 1.79999 12.0203 1.79999 11.6667V2.33333C1.79999 1.97971 1.94046 1.64057 2.19051 1.39052C2.44056 1.14048 2.7797 1 3.13332 1H12.4667" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="menu-item-text">Гаманець</p>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-for-expert">
+                                <a href="/expert-profile" class="menu-link" data-link>
                                     <svg class="menu-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.09993 7.66667C8.94088 7.66667 10.4333 6.17428 10.4333 4.33333C10.4333 2.49238 8.94088 1 7.09993 1C5.25899 1 3.7666 2.49238 3.7666 4.33333C3.7666 6.17428 5.25899 7.66667 7.09993 7.66667ZM7.09993 7.66667C8.51442 7.66667 9.87098 8.22857 10.8712 9.22876C11.8714 10.229 12.4333 11.5855 12.4333 13M7.09993 7.66667C5.68545 7.66667 4.32889 8.22857 3.3287 9.22876C2.3285 10.229 1.7666 11.5855 1.7666 13" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <p class="menu-item-text">Профіль</p>
                                 </a>
                             </li>
-                            <li class="menu-item menu-if-login">
+                            <li class="menu-item menu-for-client">
+                                <a href="/client-profile" class="menu-link" data-link>
+                                    <svg class="menu-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.09993 7.66667C8.94088 7.66667 10.4333 6.17428 10.4333 4.33333C10.4333 2.49238 8.94088 1 7.09993 1C5.25899 1 3.7666 2.49238 3.7666 4.33333C3.7666 6.17428 5.25899 7.66667 7.09993 7.66667ZM7.09993 7.66667C8.51442 7.66667 9.87098 8.22857 10.8712 9.22876C11.8714 10.229 12.4333 11.5855 12.4333 13M7.09993 7.66667C5.68545 7.66667 4.32889 8.22857 3.3287 9.22876C2.3285 10.229 1.7666 11.5855 1.7666 13" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="menu-item-text">Профіль</p>
+                                </a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="/calendar" class="menu-link" data-link>
                                     <svg class="menu-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.33333 1.33333V3.99999M9.66667 1.33333V3.99999M1 6.66666H13M2.33333 2.66666H11.6667C12.403 2.66666 13 3.26362 13 3.99999V13.3333C13 14.0697 12.403 14.6667 11.6667 14.6667H2.33333C1.59695 14.6667 1 14.0697 1 13.3333V3.99999C1 3.26362 1.59695 2.66666 2.33333 2.66666Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
