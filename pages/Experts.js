@@ -342,7 +342,7 @@ export class ExpertsPage extends Page {
                                     <div class="experts-head">
                                         <img class="experts-img" src="./img/expert-1.png" alt="">
                                         <!--одно и то же имя, но при разных разрешениях экрана отображается только одно из них-->
-                                        <a href="./expert-page.html" class="experts-name1">Антон Багінський</a>
+                                        <a href="/expert" data-link class="experts-name1">Антон Багінський</a>
                                     </div>
                                     <div class="experts-data">
                                         <!--одно и то же имя, но при разных разрешениях экрана отображается только одно из них-->

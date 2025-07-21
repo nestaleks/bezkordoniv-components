@@ -5,6 +5,7 @@ import { Footer } from './components/Footer.js';
 // Импорт основных страниц
 import { HomePage } from './pages/Home.js';
 import { AboutPage } from './pages/About.js';
+import { CalendarPage } from './pages/Calendar.js'
 import { FAQPage } from './pages/FAQ.js';
 
 // Импорт страниц блога
@@ -17,6 +18,7 @@ import { SignUpPage } from './pages/SignUp.js';
 import { ResetPasswordPage } from './pages/ResetPassword.js';
 
 // Импорт страниц клиента
+import { ClientsPage } from './pages/Clients.js';
 import { ClientChatPage } from './pages/ClientChat.js';
 import { ClientMeetingPage } from './pages/ClientMeeting.js';
 import { ClientMeetingsPage } from './pages/ClientMeetings.js';
@@ -30,8 +32,8 @@ import { ExpertMeetingPage } from './pages/ExpertMeeting.js';
 import { ExpertMeetingsPage } from './pages/ExpertMeetings.js';
 import { ExpertProfilePage } from './pages/ExpertProfile.js';
 import { ExpertWalletPage } from './pages/ExpertWallet.js';
-import { ExpertsPage } from './pages/ExpertsPage.js';
-import { ExpertPage } from './pages/ExpertPage.js';
+import { ExpertsPage } from './pages/Experts.js';
+import { ExpertPage } from './pages/Expert.js';
 
 // Импорт страницы дашборда и 404
 import { DashboardPage } from './pages/Dashboard.js';
@@ -51,6 +53,7 @@ class App {
         // Основные маршруты
         this.router.addRoute('/', HomePage);
         this.router.addRoute('/about', AboutPage);
+        this.router.addRoute('/calendar', CalendarPage);
         this.router.addRoute('/faq', FAQPage);
 
         // Маршруты блога
@@ -62,7 +65,8 @@ class App {
         this.router.addRoute('/signup', SignUpPage);
         this.router.addRoute('/reset-password', ResetPasswordPage);
 
-        // Маршруты клиента (сначала специфичные, потом общие)
+        // Маршруты клиента
+        this.router.addRoute('/clients', ClientsPage);
         this.router.addRoute('/client/:id', ClientPage);
         this.router.addRoute('/client-chat', ClientChatPage);
         this.router.addRoute('/client-meeting/:id', ClientMeetingPage);
@@ -70,7 +74,7 @@ class App {
         this.router.addRoute('/client-profile', ClientProfilePage);
         this.router.addRoute('/client-wallet', ClientWalletPage);
 
-        // Маршруты эксперта (сначала специфичные, потом общие)
+        // Маршруты эксперта
         this.router.addRoute('/experts', ExpertsPage);
         this.router.addRoute('/expert/:id', ExpertPage);
         this.router.addRoute('/expert-chat', ExpertChatPage);

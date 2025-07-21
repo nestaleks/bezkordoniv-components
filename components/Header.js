@@ -13,20 +13,20 @@ export class Header extends Component {
                         <!-- buttons for unauthorized users -->
                         <div class="header-if-logout">
                             <div class="header-buttons">
-                                <button class="header-button-expert button-secondary">
+                                <a href="/experts" data-link class="header-button-expert button-secondary">
                                     <p>Шукаєте Клієнта або Експерта?</p>
-                                </button>
-                                <button class="header-button-support button-clear">
+                                </a>
+                                <a href="/support" data-link class="header-button-support button-clear">
                                     <p>Техн-підтримка</p>
-                                </button>
-                                <button class="header-button-login button-primary">
+                                </a>
+                                <a href="/login" data-link class="header-button-login button-primary">
                                     <img src="./img/icons/login.svg" alt="">
                                     <p>Увійти</p>
-                                </button>
-                                <button class="header-button-signup button-clear">
+                                </a>
+                                <a href="/signup" data-link class="header-button-signup button-clear">
                                     <img src="./img/icons/signup.svg" alt="">
                                     <p>Реєстрація</p>
-                                </button>
+                                </a>
                             </div>
                         </div>
 
@@ -132,7 +132,7 @@ export class Header extends Component {
                                 </a>
                             </li>
                             <li class="menu-item menu-if-login">
-                                <a href="./calendar.html" class="menu-link">
+                                <a href="/calendar" class="menu-link" data-link>
                                     <svg class="menu-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.33333 1.33333V3.99999M9.66667 1.33333V3.99999M1 6.66666H13M2.33333 2.66666H11.6667C12.403 2.66666 13 3.26362 13 3.99999V13.3333C13 14.0697 12.403 14.6667 11.6667 14.6667H2.33333C1.59695 14.6667 1 14.0697 1 13.3333V3.99999C1 3.26362 1.59695 2.66666 2.33333 2.66666Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>

@@ -16,34 +16,38 @@ export class LoginPage extends Page {
 
     render() {
         this.container.innerHTML = `
-            <div class="page-container">
-                <main class="main">
-                    <div class="container">
-                        <div class="auth-container">
-                            <div class="auth-form-container">
-                                <h1 class="auth-title">Вход в личный кабинет</h1>
-                                <form class="auth-form" id="loginForm">
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Пароль</label>
-                                        <input type="password" id="password" name="password" required>
-                                    </div>
-                                    <div class="form-actions">
-                                        <button type="submit" class="button-primary">Войти</button>
-                                        <a href="/reset-password" class="form-link" data-link>Забыли пароль?</a>
-                                    </div>
-                                </form>
-                                <div class="auth-footer">
-                                    <p>Еще нет аккаунта? <a href="/signup" data-link>Зарегистрироваться</a></p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="login-page">
+                <div class="signup-images">
+                    <div class="signup-images-inner">
+                        <img class="signup-image-1" src="./img/signup-banner-1.jpg" alt="">
+                        <img class="signup-image-2" src="./img/signup-banner-2.jpg" alt="">
                     </div>
-                </main>
-                <div id="footer-container"></div>
+                </div>
+                <div class="login-container">
+                    <h2 class="login-title">Вхід в Акаунт</h2>
+
+                    <form class="login-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email*" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль" class="form-input">
+                        </div>
+                    </form>
+
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>Запамʼятати мене</p>
+                    </label>
+
+                    <a class="forgot-pass" href="/reset-password" data-link>Не памʼятаю пароль</a>
+
+                    <div class="form-actions">
+                        <a href="/signup" data-link class="need-signup button-secondary">Немає Акаунту? Зареєструватись</a>
+                        <button type="submit" class="login-submit button-primary">Увійти</button>
+                    </div>
+                </div>
             </div>
         `;
 

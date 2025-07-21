@@ -17,8 +17,8 @@ export class Footer extends Component {
                 <a href="">Політика конфіденційності </a>
                 <a href="">Політика безпеки передачі реквізитів платіжної картки</a>
                 <a href="">Умови повернення грошей</a>
-                <a href="">FAQ</a>
-                <a href="">Блог</a>
+                <a href="/faq" data-link>FAQ</a>
+                <a href="/blog" data-link>Блог</a>
             </nav>
             <div class="footer-contacts">
                 <p class="footer-contacts-title">Контакти: Телефонуйте нам:</p>

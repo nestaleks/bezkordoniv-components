@@ -1,6 +1,6 @@
 import { Page } from './Page.js';
 
-export class ExpertMeetingsPage extends Page {
+export class ClientsPage extends Page {
     render() {
         this.container.innerHTML = `
             <!--BREADCRUMB-->
@@ -9,10 +9,10 @@ export class ExpertMeetingsPage extends Page {
                     <!-- Breadcrumb will be generated automatically by JavaScript -->
                 </div>
             </nav>
-            <!--expert-meetings-->
-            <section class="expert-meetings">
+            <!--MY EXPERTS-->
+            <section class="clients">
                 <div class="container">
-                    <h4 class="page-title">Мої Зустрічі</h4>
+                    <h4 class="clients-title page-title">Клієнти</h4>
                     <div class="input-container mb-20" style="width: 100%;">
                         <div class="search-input-name">
                             <img src="./img/icons/search.svg" alt="">
@@ -31,6 +31,7 @@ export class ExpertMeetingsPage extends Page {
                             </button>
                         </div>
                     </div>
+                    <!--CLIENTS-->
                     <div class="filters-dropdowns">
                         <button class="show-filters-btn button-contained">
                             <p>Показати фільтри</p>
@@ -110,34 +111,10 @@ export class ExpertMeetingsPage extends Page {
                             </div>
                         </div>
                     </div>
-                    <ul class="expert-meetings-list">
-                        <li class="expert-meetings-card">
-                            <a href="./expert-meeting.html" class="meetings-card-header">
-                                <div class="meetings-card-img">
-                                    <img src="./img/icons/calendar-yellow.svg" alt="">
-                                </div>
-                                <div class="meetings-card-details">
-                                    <p class="meetings-card-title">Плановий візит</p>
-                                    <div class="meetings-card-pills">
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/calendar-black.svg" alt="">
-                                            <p>Вів, 28 Січня, 14:30</p>
-                                        </div>
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/target.svg" alt="">
-                                            <p>Онлайн</p>
-                                        </div>
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/time.svg" alt="">
-                                            <p>45 хвилин</p>
-                                        </div>
-                                        <div class="meetings-card-price">
-                                            <p class="meetings-card-price-value my-experts-price">25.00€</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="meetings-card-content">
+                    <!--Clients list-->
+                    <ul class="clients-list">
+                        <li class="clients-card">
+                            <div class="clients-content">
                                 <img class="clients-img" src="./img/expert-7.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Константин Вакуленко</a>
                                 <div class="clients-data">
@@ -163,56 +140,67 @@ export class ExpertMeetingsPage extends Page {
                                         <p>Українська</p>
                                     </div>
                                 </div>
+                                <button class="clients-dots">
+                                    <img src="./img/icons/dots.svg" alt="">
+                                </button>
                             </div>
-                            <div class="meetings-card-button">
+                            <div class="clients-buttons">
+                                <button class="clients-new-appointment button-primary">
+                                    <p>Налаштувати Записи</p>
+                                </button>
                                 <button class="clients-write-message button-secondary">
                                     <p>Звʼязатись</p>
                                 </button>
-                            </div>
-                            <div class="meetings-card-files">
-                                <button>
-                                    <p>Файли: <span>0</span></p>
-                                    <img src="./img/icons/files.svg" alt="">
+                                <button class="clients-call button-secondary">
+                                    <p>Дзвінок</p>
                                 </button>
                             </div>
-                            <div class="meetings-card-statuses">
-                                <div class="client-history-status">
-                                    <p>статус зустрічі</p>
-                                    <img src="./img/icons/waiting.svg" alt="">
-                                </div>
-                                <div class="client-history-payment-status">
-                                    <p>статус оплати</p>
-                                    <img src="./img/icons/approoved.svg" alt="">
-                                </div>
-                            </div>
                         </li>
-                        <li class="expert-meetings-card">
-                            <a href="" class="meetings-card-header">
-                                <div class="meetings-card-img">
-                                    <img src="./img/icons/calendar-yellow.svg" alt="">
-                                </div>
-                                <div class="meetings-card-details">
-                                    <p class="meetings-card-title">Плановий візит</p>
-                                    <div class="meetings-card-pills">
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/calendar-black.svg" alt="">
-                                            <p>Вів, 28 Січня, 14:30</p>
-                                        </div>
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/target.svg" alt="">
-                                            <p>Онлайн</p>
-                                        </div>
-                                        <div class="highlight-pill">
-                                            <img src="./img/icons/time.svg" alt="">
-                                            <p>45 хвилин</p>
-                                        </div>
-                                        <div class="meetings-card-price">
-                                            <p class="meetings-card-price-value my-experts-price">25.00€</p>
-                                        </div>
+                        <li class="clients-card">
+                            <div class="clients-content">
+                                <img class="clients-img" src="./img/expert-8.png" alt="">
+                                <a class="clients-name" href="./client-page.html">Карина Мартиненко</a>
+                                <div class="clients-data">
+                                    <div class="clients-appoints highlight-pill">
+                                        <img src="./img/icons/clients.svg" alt="">
+                                        <p>12 <span>консультацій</span></p>
+                                    </div>
+                                    <a class="clients-country highlight-pill" href="#">Німеччина</a>
+                                    <div class="clients-age highlight-pill">
+                                        <img src="./img/icons/age.svg" alt="">
+                                        <p>24 <span>роки</span></p>
+                                    </div>
+                                    <div class="clients-mail highlight-pill">
+                                        <img src="./img/icons/mail.svg" alt="">
+                                        <p>emailexm@gmail.com</p>
+                                    </div>
+                                    <div class="clients-phone highlight-pill">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                        <p>+49 123 4567 2100</p>
+                                    </div>
+                                    <div class="clients-language highlight-pill">
+                                        <img src="./img/icons/translator-black.svg" alt="">
+                                        <p>Українська</p>
                                     </div>
                                 </div>
-                            </a>
-                            <div class="meetings-card-content">
+                                <button class="clients-dots">
+                                    <img src="./img/icons/dots.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="clients-buttons">
+                                <button class="clients-new-appointment button-primary">
+                                    <p>Налаштувати Записи</p>
+                                </button>
+                                <button class="clients-write-message button-secondary">
+                                    <p>Звʼязатись</p>
+                                </button>
+                                <button class="clients-call button-secondary">
+                                    <p>Дзвінок</p>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="clients-card">
+                            <div class="clients-content">
                                 <img class="clients-img" src="./img/expert-9.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Іванна Поліщук</a>
                                 <div class="clients-data">
@@ -238,27 +226,63 @@ export class ExpertMeetingsPage extends Page {
                                         <p>Українська</p>
                                     </div>
                                 </div>
+                                <button class="clients-dots">
+                                    <img src="./img/icons/dots.svg" alt="">
+                                </button>
                             </div>
-                            <div class="meetings-card-button">
+                            <div class="clients-buttons">
+                                <button class="clients-new-appointment button-primary">
+                                    <p>Налаштувати Записи</p>
+                                </button>
                                 <button class="clients-write-message button-secondary">
                                     <p>Звʼязатись</p>
                                 </button>
-                            </div>
-                            <div class="meetings-card-files">
-                                <button>
-                                    <p>Файли: <span>0</span></p>
-                                    <img src="./img/icons/files.svg" alt="">
+                                <button class="clients-call button-secondary">
+                                    <p>Дзвінок</p>
                                 </button>
                             </div>
-                            <div class="meetings-card-statuses">
-                                <div class="client-history-status">
-                                    <p>статус зустрічі</p>
-                                    <img src="./img/icons/waiting.svg" alt="">
+                        </li>
+                        <li class="clients-card">
+                            <div class="clients-content">
+                                <img class="clients-img" src="./img/expert-10.png" alt="">
+                                <a class="clients-name" href="./client-page.html">Остап Шевченко</a>
+                                <div class="clients-data">
+                                    <div class="clients-appoints highlight-pill">
+                                        <img src="./img/icons/clients.svg" alt="">
+                                        <p>12 <span>консультацій</span></p>
+                                    </div>
+                                    <a class="clients-country highlight-pill" href="#">Німеччина</a>
+                                    <div class="clients-age highlight-pill">
+                                        <img src="./img/icons/age.svg" alt="">
+                                        <p>24 <span>роки</span></p>
+                                    </div>
+                                    <div class="clients-mail highlight-pill">
+                                        <img src="./img/icons/mail.svg" alt="">
+                                        <p>emailexm@gmail.com</p>
+                                    </div>
+                                    <div class="clients-phone highlight-pill">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                        <p>+49 123 4567 2100</p>
+                                    </div>
+                                    <div class="clients-language highlight-pill">
+                                        <img src="./img/icons/translator-black.svg" alt="">
+                                        <p>Українська</p>
+                                    </div>
                                 </div>
-                                <div class="client-history-payment-status">
-                                    <p>статус оплати</p>
-                                    <img src="./img/icons/approoved.svg" alt="">
-                                </div>
+                                <button class="clients-dots">
+                                    <img src="./img/icons/dots.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="clients-buttons">
+                                <button class="clients-new-appointment button-primary">
+                                    <p>Налаштувати Записи</p>
+                                </button>
+                                <button class="clients-write-message button-secondary">
+                                    <p>Звʼязатись</p>
+                                </button>
+                                <button class="clients-call button-secondary">
+                                    <p>Дзвінок</p>
+                                </button>
                             </div>
                         </li>
                     </ul>
