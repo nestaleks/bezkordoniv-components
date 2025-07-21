@@ -21,8 +21,8 @@
 
 .modal-content {
     position: relative;
-    background-color: #fff;
-    border-radius: 20px;
+    background-color: var(--white-100);
+    border-radius: var(--radius-lg);
     padding: 20px;
     max-width: 600px;
     width: 100%;
@@ -46,7 +46,7 @@
     width: 25px;
     height: 25px;
     padding: 8px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08),0px 1px 4px 0px rgba(0, 0, 0, 0.04);
     cursor: pointer;
@@ -94,7 +94,7 @@
     width: 100%;
     padding: 12px 15px;
     border: 1px solid var(--secondary-05);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-size: 14px;
     transition: border-color 0.3s;
 }
@@ -151,7 +151,7 @@
 .modal-recharge-balance .modal-content,
 .modal-pay-appointments .modal-content {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     padding: 12px;
     width: 95%;
@@ -173,7 +173,7 @@
     align-items: center;
     gap: 12px;
     padding: 6px 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 /* ============================================
@@ -205,7 +205,7 @@
     width: 800px;
     margin: 0 auto;
     background-color: var(--white-100);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 20px;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -257,7 +257,7 @@
 .modal-founder-item {
     padding: 6px 12px 6px 32px;
     background-color: var(--black-10);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     width: fit-content;
     position: relative;
     line-height: 21px;
@@ -305,7 +305,7 @@
     gap: 12px;
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 12px;
     width: 100%;
     max-width: 1210px;
@@ -318,7 +318,7 @@
     gap: 12px;
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 12px;
     width: 100%;
     max-width: 1210px;
@@ -338,7 +338,7 @@
     padding: 24px;
     background-color: var(--background);
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 .payment-balance-info {
@@ -385,7 +385,7 @@
 .payment-balance-item {
     width: 100%;
     border: 1px solid var(--black-10);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 10px 16px;
     line-height: 22px;
 }
@@ -404,7 +404,7 @@
     padding: 24px;
     text-align: center;
     align-content: center;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-08);
     border: 1px dashed var(--secondary-05);
     cursor: pointer;
@@ -442,7 +442,7 @@
     align-items: center;
     gap: 12px;
     padding: 6px 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 .payment-modal-card-info {
@@ -494,7 +494,7 @@
 
 .payment-appointment-item {
     border: 1px solid var(--black-10, #f0f0f0);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     max-width: 1210px;
 }
@@ -555,7 +555,7 @@
     font-weight: 700;
     padding: 8px 12px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 .payment-price-pill{
@@ -575,7 +575,7 @@
 .payment-price-pill div{
     width: fit-content;
     padding: 8px 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
 }
 
@@ -586,7 +586,7 @@
     align-items: center;
     gap: 12px;
     padding: 8px 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 
@@ -722,7 +722,7 @@
 
 .payment-method {
     border: 1px solid var(--black-10, #f0f0f0);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     padding: 16px;
     background-color: var(--white-100);
@@ -856,7 +856,7 @@
     width: 60px;
     height: 60px;
     padding: 22px;
-    border-radius: 40px;
+    border-radius: var(--radius-xxl);
     background-color: var(--secondary-08);
 }
 
@@ -894,7 +894,7 @@
     text-overflow: ellipsis;
     background-color: var(--white-100);
     padding: 5px 25px 5px 10px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
 }
 
@@ -965,7 +965,7 @@
     color: var(--black-50);
     border: 1px solid var(--black-10);
     padding: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1096,7 +1096,7 @@
     color: var(--black-50);
     border: 1px solid var(--secondary-05);
     background-color: transparent;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 12px 20px; 
     gap: 10px;
     margin-bottom: 12px;
@@ -1110,7 +1110,7 @@
 
 .modal-file-item {
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     transition: transform 0.2s;
     cursor: pointer;
@@ -1188,7 +1188,7 @@
     align-items: center;
     padding: 15px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     transition: transform 0.2s;
 }
 
@@ -1236,7 +1236,7 @@
     align-items: center;
     padding: 15px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     transition: transform 0.2s;
 }
 

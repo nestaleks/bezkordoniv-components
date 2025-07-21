@@ -1,5 +1,5 @@
 :root{
-
+	/* COLORS */
     --background: #f9f8fe;
 	--primary-01: #2e66e2;
 	--primary-02: #4577e5;
@@ -61,4 +61,11 @@
 	--black-30: rgba(0, 0, 0, 0.3);
 	--black-20: rgba(0, 0, 0, 0.2);
 	--black-10: rgba(0, 0, 0, 0.1);
+	/* BORDER-RADIUS */
+	--radius-xs: 4px;
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--radius-xl: 30px;
+	--radius-xxl: 40px;
 }

@@ -1,7 +1,7 @@
 .faq-page{
     border: 1px solid var(--black-10);
     background-color: var(--white-100);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     margin-top: 20px;
 }
 
@@ -12,7 +12,7 @@
     align-items: center;
     font-size: 16px;
     background: var(--white-100);
-    border-radius: 14px;
+    border-radius: var(--radius-md);
     outline: none;
     border: 1px solid var(--secondary-05);
     padding: 4px;
@@ -45,7 +45,7 @@
     line-height: 42px;
     gap: 10px;
     padding: 9px 16px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     margin-left: auto;
 }
@@ -58,7 +58,7 @@
 }
 
 .faq-content-item{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--background);
     padding: 12px;
     display: flex;

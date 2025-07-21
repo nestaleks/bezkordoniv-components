@@ -1,7 +1,7 @@
 .client-profile-content{
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     gap: 20px;

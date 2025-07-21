@@ -1,7 +1,7 @@
 .expert-profile-content{
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -47,7 +47,7 @@
 }
 .expert-profile-prof-content{
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 .expert-profile-prof-item{
@@ -82,7 +82,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-08);
     border: 1px dashed var(--secondary-05);
     cursor: pointer;
@@ -117,7 +117,7 @@
 .expert-language,
 .expert-link{
     background-color: var(--purple-08);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: flex;
     gap: 10px;
     align-items: center;
@@ -146,7 +146,7 @@
 .expert-profile-prof-biography {
     width: 100%;
     border: 1px solid var(--secondary-05);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 16px;
     height: 150px;
 }
@@ -187,7 +187,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-08);
     border: 1px dashed var(--secondary-05);
     padding: 16px;

@@ -1,6 +1,6 @@
 .client-wallet-balance{
     background-color: var(--white-100);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     border: 1px solid var(--black-10);
     padding: 12px;
     margin-bottom: 20px;
@@ -45,7 +45,7 @@
 .client-wallet-item{
     width: 100%;
     border: 1px solid var(--black-10);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     padding: 10px 16px;
     line-height: 22px;
 }
@@ -66,7 +66,7 @@
 }
 .client-wallet-buttons button{
     position: relative;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     padding: 12px;
     width: 100%;
     display: flex;
@@ -110,7 +110,7 @@
 
 .client-wallet-history{
     background-color: var(--white-100);
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     border: 1px solid var(--black-10);
 }
 
@@ -135,7 +135,7 @@
     display: flex;
     gap: 10px;
     padding: 6px;
-    border-radius: 40px;
+    border-radius: var(--radius-xxl);
     border: 1px solid var(--black-10);
 }
 
@@ -144,7 +144,7 @@
     padding: 7px 12px;
     background-color: transparent;
     border: none;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -190,7 +190,7 @@
     justify-content: space-between;
     padding: 12px;
     border: 1px solid var(--black-10);
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 }
 .wallet-history-item div{
     width: auto;

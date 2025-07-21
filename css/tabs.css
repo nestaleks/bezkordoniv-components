@@ -4,7 +4,7 @@
 .tabs-inner{
     background-color: var(--background);
     height: 47px;
-    border-radius: 40px;
+    border-radius: var(--radius-xxl);
     border: 1px solid var(--primary-07);
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     line-height: 21px;
     border: none;
     background-color: transparent;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     cursor: pointer;
     transition: all 0.2s ease;
 }

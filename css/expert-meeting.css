@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08),0px 1px 4px 0px rgba(0, 0, 0, 0.04);
 }
@@ -45,7 +45,7 @@
 }
 
 .meetings-card-notes-inner{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--background);
     border: 1px solid var(--black-10);
     padding: 12px;
@@ -84,7 +84,7 @@
 }
 
 .meetings-card-notes-box{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
     background-color: var(--white-100);
     padding: 12px;
@@ -138,7 +138,7 @@
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--background);
 }
 
@@ -226,7 +226,7 @@
     width: 50px;
     height: 50px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-08);
     text-align: center;
     align-content: center;
@@ -260,7 +260,7 @@
 }
 
 .expert-meeting-chat-input-box{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     width: 100%;
     border: 1px solid var(--secondary-05);
     display: flex;
@@ -287,7 +287,7 @@
     width: 42px;
     height: 42px;
     padding: 13px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-01);
     text-align: center;
     align-content: center;

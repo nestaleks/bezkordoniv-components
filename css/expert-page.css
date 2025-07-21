@@ -17,7 +17,7 @@
     gap: 20px;
 }
 .expert-card-left{
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     border: 1px solid var(--black-10);
     width: 100%;
     height: fit-content;
@@ -54,7 +54,7 @@
 }
 .expert-card-amount-rating,
 .expert-card-amount-appoints{
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     background-color: var(--black-10);
     padding: 6px 12px;
     display: flex;
@@ -105,7 +105,7 @@
     display: flex;
     align-items: center;
     min-height: 38px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     font-size: 12px;
     line-height: 18px;
     font-weight: 800;
@@ -209,7 +209,7 @@
 }
 .expert-card-certificates-item{
     display: flex;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
     padding: 10px;
@@ -229,7 +229,7 @@
     padding: 12px;
 }
 .expert-card-service-item{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
     padding: 12px;
@@ -249,7 +249,7 @@
 .expert-card-service-price{
     display: flex;
     align-items: center;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     background-color: var(--black-10);
     border: 1px solid var(--purple-02);
     color: var(--purple-01);
@@ -269,7 +269,7 @@
     margin-bottom: 6px;
 }
 .expert-card-service-detail{
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     background-color: var(--black-10);
     padding: 6px 12px;
     display: flex;
@@ -298,7 +298,7 @@
 }
 .expert-card-buttons{
     padding: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@
 }
 
 .expert-card-reviews{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
     display: flex;
     flex-direction: column;
@@ -391,7 +391,7 @@
 }
 .expert-card-lastreview{
     padding: 12px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--black-10);
     display: flex;
     gap: 12px;
@@ -515,7 +515,7 @@ label.star:before{
 .addreview-container {
     width: 100%;
     border: 1px solid var(--secondary-05);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 16px;
 }
 .addreview-toolbar {

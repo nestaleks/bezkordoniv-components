@@ -72,7 +72,7 @@
     align-items: center;
     font-size: 16px;
     background: var(--white-100);
-    border-radius: 14px;
+    border-radius: var(--radius-md);
     outline: none;
     border: 1px solid var(--secondary-05);
 }
@@ -123,7 +123,7 @@
     line-height: 42px;
     gap: 10px;
     padding: 9px 16px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     margin-left: auto;
 }
@@ -137,7 +137,7 @@
 .search-banner{
     display: flex;
     height: 120px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.08),0px 2px 20px 0px rgba(0, 0, 0, 0.04);
     background: var(--white-100);
     position: relative;
@@ -198,7 +198,7 @@
     padding: 6px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-radius: 40px;
+    border-radius: var(--radius-xxl);
     border: 1px solid var(--primary-07);
 }
 .features-buttons-link{
@@ -209,7 +209,7 @@
     line-height: 24px;
     padding: 6px 12px;
     color: var(--black-50);
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
 }
 .features-buttons-link:hover{
     color: var(--primary-01);
@@ -262,7 +262,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
@@ -276,7 +276,7 @@
     width: calc(100% - 24px);
     padding: 12px;
     margin: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     text-align: center;
     font-size: 16px;
     font-weight: 800;
@@ -362,7 +362,7 @@
     justify-content: space-between;
     padding: 12px;
     background-color: var(--white-100);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -429,7 +429,7 @@
 }
 .how-to-order-item{
     padding: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
     background-color: var(--primary-08);
     transition: all 0.3s ease;
@@ -477,7 +477,7 @@
     background-color: var(--primary-01);
 }
 .who-need-it-inner{
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -573,7 +573,7 @@
     gap: 16px;
     padding: 9px 26px 6px 40px;
     margin-top: 20px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--secondary-02);
     font-weight: 800;
     line-height: 21px;
@@ -612,7 +612,7 @@
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
     height: 240px;
     transition: all 0.3s ease;
@@ -759,7 +759,7 @@
     justify-content: space-between;
     padding: 12px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background: var(--white-100);
     gap: 20px;
 }
@@ -777,7 +777,7 @@
     align-items: center;
     padding: 12px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     transition: all 0.3s ease;
 }
 
@@ -817,7 +817,7 @@
 }
 .question-list-item {
     width: 100%;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background: rgb(249, 248, 254);
     display: flex;
     flex-direction: column;
@@ -876,7 +876,7 @@
     padding: 12px;
     gap: 12px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
 }
 .locations-item{
@@ -894,7 +894,7 @@
     width: 80px;
     height: 80px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 10px;
 }
 .locations-item-box{
@@ -957,7 +957,7 @@
     gap: 10px;
     align-items: center;
     color: var(--white-100);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 .need-help-btn p{
     font-size: 14px;

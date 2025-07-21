@@ -22,7 +22,7 @@
     display: flex;
     gap: 10px;
     padding: 6px;
-    border-radius: 40px;
+    border-radius: var(--radius-xxl);
     border: 1px solid var(--black-10);
 }
 .nav-buttons button,
@@ -31,7 +31,7 @@
     padding: 7px 12px;
     background-color: transparent;
     border: none;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -73,7 +73,7 @@ button:hover {
     text-align: center;
     padding: 10px;
     background-color: var(--black-50);
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 }
 .hour-slots {
     display: flex;
@@ -88,7 +88,7 @@ button:hover {
     flex-direction: column;
     gap: 6px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background-color: var(--white-100);
 }
 .hour-label {
@@ -108,7 +108,7 @@ button:hover {
 }
 .hour-appointment-call{
     border: 1px dashed var(--secondary-05);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--secondary-07);
 }
 .hour-appointment-call h6::before{
@@ -123,7 +123,7 @@ button:hover {
 
 .hour-appointment-video{
     border: 1px dashed var(--purple-05);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--purple-07);
 }
 .hour-appointment-video h6::before{
@@ -138,7 +138,7 @@ button:hover {
 
 .hour-appointment-local{
     border: 1px dashed var(--green-05);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--green-07);
 }
 .hour-appointment-local h6::before{
@@ -191,7 +191,7 @@ button:hover {
     width: 50px;
     height: 50px;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     background-color: var(--primary-06);
     text-align: center;
     display: flex;
@@ -229,7 +229,7 @@ button:hover {
     width: 100%;
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 4px;
     overflow: hidden;
 }
@@ -255,7 +255,7 @@ button:hover {
     width: 50px;
     height: 50px;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     background-color: var(--primary-06);
     text-align: center;
     display: flex;
@@ -290,7 +290,7 @@ button:hover {
     width: 100%;
     background-color: var(--white-100);
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 4px;
     overflow: hidden;
     display: flex;
@@ -313,7 +313,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 4px;
 }
 .month-content-waiting{

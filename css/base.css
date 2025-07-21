@@ -114,7 +114,7 @@ h4{
     max-width: 1440px;
     margin: 0 24px 20px;
     border: 1px solid var(--black-10);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 24px 0;
 }
 .section-lg-inner{
