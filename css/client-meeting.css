@@ -1,7 +1,6 @@
 /* client-meeting */
 .client-meeting-title{
     color: var(--black-50);
-    margin-bottom: 20px;
 }
 .client-meeting-item{
     border-radius: var(--radius-sm);
@@ -246,7 +245,6 @@
 .client-meeting-chat-message{
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
     max-width: 345px;
 }
 .client-meeting-message-img img{

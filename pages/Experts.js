@@ -45,7 +45,7 @@ export class ExpertsPage extends Page {
                                 </svg>
                             </div>
                         </div>
-                        <ul class="top-experts-list">
+                        <ul class="top-experts-list mb-20">
                             <li class="top-experts-card">
                                 <a href="#">
                                     <div class="top-experts-box mb-20">
@@ -336,7 +336,7 @@ export class ExpertsPage extends Page {
                         </div>
                     </div>
                     <ul class="experts-list">
-                        <li class="experts-card">
+                        <li class="experts-card mb-20">
                             <div class="experts-box">
                                 <div class="experts-content">
                                     <div class="experts-head">
@@ -407,7 +407,7 @@ export class ExpertsPage extends Page {
                                 </ul>
                             </div>
                         </li>
-                        <li class="experts-card">
+                        <li class="experts-card mb-20">
                             <div class="experts-box">
                                 <div class="experts-content">
                                     <div class="experts-head">

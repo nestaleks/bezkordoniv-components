@@ -12,7 +12,7 @@ export class ClientMeetingsPage extends Page {
             <!--MY client-meetings-->
             <section class="client-meetings">
                 <div class="container">
-                    <h4 class="client-meetings-title">Мої Зустрічі</h4>
+                    <h4 class="client-meetings-title mb-20">Мої Зустрічі</h4>
                     <div class="tabs">
                         <div class="tabs-inner">
                             <button class="tabs-item client-meetings-tabs-all">
@@ -177,7 +177,7 @@ export class ClientMeetingsPage extends Page {
                             </button>
                         </div>
                     </div>
-                    <ul class="client-meetings-list">
+                    <ul class="client-meetings-list mt-20 mb-20">
                         <li class="client-meetings-item">
                             <div class="client-meetings-item-header">
                                 <div class="client-meetings-item-date">

@@ -91,7 +91,6 @@
 .chat-list-item-header{
     display: flex;
     gap: 5px;
-    margin-bottom: 12px;
 }
 
 .chat-list-item-img{
@@ -171,7 +170,6 @@
 .client-chat-message{
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
     max-width: 345px;
 }
 

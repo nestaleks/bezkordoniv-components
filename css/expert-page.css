@@ -338,7 +338,6 @@
     font-size: 24px;
     line-height: 36px;
     color: var(--black-100);
-    margin-bottom: 21px;
 }
 .expert-card-rating-numbers::before{
     content: url(../img/icons/star.svg);
@@ -372,7 +371,6 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 12px;
-    margin-bottom: 21px;
 }
 .expert-card-allreview-link{
     font-weight: 700;
@@ -461,7 +459,6 @@
     font-weight: 400;
     line-height: 18px;
     padding-left: 28px;
-    margin-bottom: 12px;
 }
 .rating-stars{
     display: inline-block;
@@ -510,7 +507,6 @@ label.star:before{
     font-weight: 400;
     line-height: 18px;
     padding-left: 28px;
-    margin-bottom: 12px;
 }
 .addreview-container {
     width: 100%;

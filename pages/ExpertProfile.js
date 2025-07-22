@@ -30,7 +30,7 @@ export class ExpertProfilePage extends Page {
                         </div>
                     </div>
                     <div class="expert-profile-content">
-                        <div class="expert-profile-photo">
+                        <div class="expert-profile-photo mb-20">
                             <img class="expert-profile-avatar" src="./img/expert-3.png" alt="">
                             <div class="expert-profile-photo-actions">
                                 <button>
@@ -189,7 +189,7 @@ export class ExpertProfilePage extends Page {
                                             <p>Додати мову</p>
                                         </div>
                                     </div>
-                                    <div class="expert-profile-prof-languages">
+                                    <div class="expert-profile-prof-languages mt-12">
                                         <div class="expert-language">
                                             <img src="./img/icons/translator-purple.svg" alt="">
                                             <p>Українська</p>
@@ -314,7 +314,7 @@ export class ExpertProfilePage extends Page {
                                                 <p>Додати посилання</p>
                                             </div>
                                         </div>
-                                        <div class="expert-profile-prof-links">
+                                        <div class="expert-profile-prof-links mt-12">
                                             <div class="expert-link">
                                                 <img src="./img/icons/link-purple.svg" alt="">
                                                 <p>http://instagram.com</p>

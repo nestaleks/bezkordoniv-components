@@ -24,9 +24,9 @@ export class LoginPage extends Page {
                     </div>
                 </div>
                 <div class="login-container">
-                    <h2 class="login-title">Вхід в Акаунт</h2>
+                    <h2 class="login-title mb-40">Вхід в Акаунт</h2>
 
-                    <form class="login-form">
+                    <form class="login-form mb-12">
                         <div class="form-group">
                             <input type="text" placeholder="Email*" class="form-input">
                         </div>
@@ -35,7 +35,7 @@ export class LoginPage extends Page {
                         </div>
                     </form>
 
-                    <label class="checkbox-container">
+                    <label class="checkbox-container mb-12">
                         <input type="checkbox">
                         <span class="checkmark"></span>
                         <p>Запамʼятати мене</p>
@@ -43,7 +43,7 @@ export class LoginPage extends Page {
 
                     <a class="forgot-pass" href="/reset-password" data-link>Не памʼятаю пароль</a>
 
-                    <div class="form-actions">
+                    <div class="form-actions mt-40">
                         <a href="/signup" data-link class="need-signup button-secondary">Немає Акаунту? Зареєструватись</a>
                         <button type="submit" class="login-submit button-primary">Увійти</button>
                     </div>

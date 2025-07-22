@@ -13,15 +13,15 @@ export class ClientWalletPage extends Page {
              <section class="client-wallet-page">
                 <div class="container">
                     <h4 class="client-wallet-title page-title">Гаманець</h4>
-                    <div class="client-wallet-balance">
-                        <div class="client-wallet-info">
+                    <div class="client-wallet-balance mb-20">
+                        <div class="client-wallet-info mb-12">
                             <img src="./img/icons/money-blue.svg" alt="">
                             <div class="client-wallet-text">
                                 <p>доступний баланс</p>
                                 <p>$120.00</p>
                             </div>
                         </div>
-                        <div class="client-wallet-available">
+                        <div class="client-wallet-available mb-12">
                             <div class="client-wallet-item">
                                 <p>Весь Баланс: </p>
                                 <p>$240.00</p>
@@ -58,7 +58,7 @@ export class ClientWalletPage extends Page {
                             </div>
                         </div>
                         <div class="wallet-history-body">
-                            <div class="wallet-history-filters">
+                            <div class="wallet-history-filters mb-20">
                                 <div class="filters-dropdown">
                                     <button class="dropbtn">
                                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +182,7 @@ export class ClientWalletPage extends Page {
                                 </div>
                                 <div class="modal-body">
                                     <p class="modal-description">Будь ласка введіть данні картки, щоб поповнити баланс</p>
-                                    
+
                                     <div class="client-wallet-modal-card-info">
                                         <div class="card-info">
                                             <input type="text" placeholder="Номер картки" class="card-input card-number" maxlength="19">
@@ -214,7 +214,7 @@ export class ClientWalletPage extends Page {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- modal window pay appointment list-->
                         <div class="modal-pay-appointments" id="modal-pay-appointments">
                             <div class="modal-content">
@@ -226,7 +226,7 @@ export class ClientWalletPage extends Page {
                                 </div>
                                 <div class="modal-body">
                                     <p class="modal-description">Будь ласка оберіть зустріч, яку ві б хотіли сплатити</p>
-                                    
+
                                     <div class="payment-modal-appointments">
                                         <div class="payment-appointment-item">
                                             <div class="payment-appointment-date">

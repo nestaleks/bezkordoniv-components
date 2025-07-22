@@ -20,7 +20,7 @@ export class CalendarPage extends Page {
                                 <div class="breadcrumb-img">
                                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.33333 1.33337V4.00004M9.66667 1.33337V4.00004M1 6.66671H13M2.33333 2.66671H11.6667C12.403 2.66671 13 3.26366 13 4.00004V13.3334C13 14.0698 12.403 14.6667 11.6667 14.6667H2.33333C1.59695 14.6667 1 14.0698 1 13.3334V4.00004C1 3.26366 1.59695 2.66671 2.33333 2.66671Z" stroke="#2E66E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                    
+                                        </svg>
                                 </div>
                                 <a href="#" class="breadcrumb-text">Календар</a>
                             </div>
@@ -33,7 +33,7 @@ export class CalendarPage extends Page {
                 <div class="container">
                     <h4 class="calendar-title page-title">Календар</h4>
                     <div class="calendar-container">
-                        <div class="calendar-header">
+                        <div class="calendar-header mb-20">
                             <div class="nav-buttons">
                                 <button id="prev-btn">
                                     <img src="./img/icons/prev-btn.svg" alt="">
@@ -50,7 +50,7 @@ export class CalendarPage extends Page {
                                 <button class="view-btn" data-view="month">Місяць</button>
                             </div>
                         </div>
-                        
+
                         <div class="calendar-body">
                             <!-- Day View -->
                             <table class="calendar-day">
@@ -149,7 +149,7 @@ export class CalendarPage extends Page {
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                             <!-- Week View -->
                             <table class="calendar-week">
                                 <thead>
@@ -544,7 +544,7 @@ export class CalendarPage extends Page {
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                             <!-- Month View -->
                             <table class="calendar-month">
                                 <thead>
@@ -641,7 +641,7 @@ export class CalendarPage extends Page {
                                         <td>
                                             <p class="date-label">08.04.2025</p>
                                             <div class="month-content">
-                                                
+
                                             </div>
                                         </td>
                                         <td>

@@ -45,7 +45,7 @@ export class ExpertChatPage extends Page {
                             </div>
                             <ul class="chat-list">
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-9.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-client-name">Аліна Берікова</p>
@@ -60,7 +60,7 @@ export class ExpertChatPage extends Page {
                                     </div>
                                 </li>
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-5.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-client-name">Марина Іванова</p>
@@ -75,7 +75,7 @@ export class ExpertChatPage extends Page {
                                     </div>
                                 </li>
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-7.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-client-name">Кирило Павлюченко</p>
@@ -109,7 +109,7 @@ export class ExpertChatPage extends Page {
                                     </div>
                                     <a href="./expert-page.html" class="expert-chat-client-name">Аліна Берікова</a>
                                 </div>
-                                <div class="expert-chat-client-data">
+                                <div class="expert-chat-client-data mt-12">
                                     <div class="clients-appoints highlight-pill">
                                         <img src="./img/icons/clients.svg" alt="">
                                         <p>12 <span>консультацій</span></p>
@@ -150,7 +150,7 @@ export class ExpertChatPage extends Page {
                                 </button>
                             </div>
                             <div class="expert-chat-messages">
-                                <div class="expert-chat-message expert-chat-from-client">
+                                <div class="expert-chat-message mb-20 expert-chat-from-client">
                                     <div class="expert-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>
@@ -160,14 +160,14 @@ export class ExpertChatPage extends Page {
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="expert-chat-message expert-chat-from-expert">
+                                <div class="expert-chat-message mb-20 expert-chat-from-expert">
                                     <div class="expert-chat-message-content">
                                         <p class="expert-chat-message-user">Ви<span>12:15</span></p>
                                         <p class="expert-chat-message-text">Доброго дня! В вас вимкнено мікрофон</p>
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="expert-chat-message expert-chat-from-client">
+                                <div class="expert-chat-message mb-20 expert-chat-from-client">
                                     <div class="expert-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>
@@ -197,7 +197,7 @@ export class ExpertChatPage extends Page {
                     <div class="expert-remind">
                         <div class="remind-content">
                             <div class="remind-section">
-                                <div class="remind-section-header">
+                                <div class="remind-section-header mb-12">
                                     <img src="./img/icons/letter.svg" alt="">
                                     <div class="remind-section-title">
                                         <p>Назва</p>
@@ -217,7 +217,7 @@ export class ExpertChatPage extends Page {
                                 </div>
                             </div>
                             <div class="remind-section">
-                                <div class="remind-section-header">
+                                <div class="remind-section-header mb-12">
                                     <img src="./img/icons/clock-gray.svg" alt="">
                                     <div class="remind-section-title">
                                         <p>Час</p>
@@ -236,7 +236,7 @@ export class ExpertChatPage extends Page {
                                 </div>
                             </div>
                             <div class="remind-section">
-                                <div class="remind-section-header">
+                                <div class="remind-section-header mb-12">
                                     <img src="./img/icons/user.svg" alt="">
                                     <div class="remind-section-title">
                                         <p>Користувач</p>
@@ -252,7 +252,7 @@ export class ExpertChatPage extends Page {
                                         <img src="./img/icons/add-black.svg" alt="">
                                     </button>
                                 </div>
-                                <ul class="remind-user-list">
+                                <ul class="remind-user-list mt-12">
                                     <li class="remind-user-item">
                                         <div class="remind-user-info">
                                             <img src="./img/expert-5.png" alt="">
@@ -283,7 +283,7 @@ export class ExpertChatPage extends Page {
                                 </ul>
                             </div>
                             <div class="remind-section">
-                                <div class="remind-section-header">
+                                <div class="remind-section-header mb-12">
                                     <img src="./img/icons/write.svg" alt="">
                                     <div class="remind-section-title">
                                         <p>Опис</p>
@@ -320,7 +320,7 @@ export class ExpertChatPage extends Page {
                                 </div>
                             </div>
                             <div class="remind-section">
-                                <div class="remind-section-header">
+                                <div class="remind-section-header mb-12">
                                     <img src="./img/icons/documents.svg" alt="">
                                     <div class="remind-section-title">
                                         <p>Файл</p>
@@ -392,7 +392,7 @@ export class ExpertChatPage extends Page {
                                     </div>
                                     <div class="remind-item-users">
                                         <p class="remind-item-users-title">користувачі</p>
-                                        <ul class="remind-item-users-list">
+                                        <ul class="remind-item-users-list mt-12">
                                             <li class="remind-item-users-item">
                                                 <img src="./img/expert-5.png" alt="">
                                             </li>
@@ -426,9 +426,9 @@ export class ExpertChatPage extends Page {
                             <p>Назад</p>
                         </button>
                     </div>
-                    <div class="expert-call-page">
+                    <div class="expert-call-page mt-20">
                         <div class="expert-call-content">
-                            <div class="expert-call-top">
+                            <div class="expert-call-top mb-20">
                                 <div class="expert-call-time">
                                     <img src="./img/icons/rec.svg" alt="">
                                     <p>Зустріч - <span>00:25:14</span></p>
@@ -441,7 +441,7 @@ export class ExpertChatPage extends Page {
                             <div class="expert-call-display">
                                 <img src="./img/icons/video-camera-front.svg" alt="">
                             </div>
-                            <div class="expert-call-controls">
+                            <div class="expert-call-controls mt-12 mb-12">
                                 <div class="call-volume">
                                     <img src="./img/icons/volume-min.svg" alt="">
                                     <label class="slider" for="slider-input">
@@ -483,7 +483,7 @@ export class ExpertChatPage extends Page {
                                     <p class="expert-call-notes-text">Додайте нотатки до вашої зустрічі</p>
                                 </div>
                                 <div class="expert-call-notes-new">
-                                    <div class="expert-call-notes-add">
+                                    <div class="expert-call-notes-add mt-12 mb-12">
                                         <div class="expert-call-notes-description">
                                             <div class="toolbar">
                                                 <button>
@@ -526,7 +526,7 @@ export class ExpertChatPage extends Page {
                                         <p>Додати</p>
                                     </button>
                                 </div>
-                                <div class="expert-call-notes-list">
+                                <div class="expert-call-notes-list mt-12">
                                     <div class="expert-call-notes-item">
                                         <div class="expert-call-notes-box">
                                             <p>12:24</p>
@@ -556,7 +556,7 @@ export class ExpertChatPage extends Page {
                                 </button>
                             </div>
                             <div class="expert-chat-messages" style="margin-top: 0">
-                                <div class="expert-chat-message expert-chat-from-client">
+                                <div class="expert-chat-message mb-20 expert-chat-from-client">
                                     <div class="expert-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>
@@ -566,14 +566,14 @@ export class ExpertChatPage extends Page {
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="expert-chat-message expert-chat-from-expert">
+                                <div class="expert-chat-message mb-20 expert-chat-from-expert">
                                     <div class="expert-chat-message-content">
                                         <p class="expert-chat-message-user">Ви<span>12:15</span></p>
                                         <p class="expert-chat-message-text">Доброго дня! В вас вимкнено мікрофон</p>
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="expert-chat-message expert-chat-from-client">
+                                <div class="expert-chat-message mb-20 expert-chat-from-client">
                                     <div class="expert-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>

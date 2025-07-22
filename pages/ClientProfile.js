@@ -27,7 +27,7 @@ export class ClientProfilePage extends Page {
                         </div>
                     </div>
                     <div class="client-profile-content">
-                        <div class="client-profile-photo">
+                        <div class="client-profile-photo mb-20">
                             <img class="client-profile-avatar" src="./img/expert-7.png" alt="">
                             <div class="client-profile-photo-actions">
                                 <button>

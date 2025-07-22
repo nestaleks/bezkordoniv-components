@@ -80,11 +80,11 @@ export class DashboardPage extends Page {
                     </div>
                 </div>
             </section>
-            
+
             <!--LAST MEETINGS-->
             <section class="last-meetings">
                 <div class="container">
-                    <p class="last-meetings-title">Останні зустрічі</p>
+                    <p class="last-meetings-title mb-20">Останні зустрічі</p>
                     <div class="filters-dropdowns">
                         <button class="show-filters-btn button-contained">
                             <p>Показати фільтри</p>
@@ -94,7 +94,7 @@ export class DashboardPage extends Page {
                                 <button class="dropbtn">
                                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.33333 1.33334V4M9.66667 1.33334V4M1 6.66667H13M2.33333 2.66667H11.6667C12.403 2.66667 13 3.26362 13 4V13.3333C13 14.0697 12.403 14.6667 11.6667 14.6667H2.33333C1.59695 14.6667 1 14.0697 1 13.3333V4C1 3.26362 1.59695 2.66667 2.33333 2.66667Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                        
+                                        </svg>
                                     <p class="dropbtn-text">Дата</p>
                                     <img class="dropbtn-img-default" src="./img/icons/accordion-arrow.svg" alt="">
                                     <img class="dropbtn-img-active" src="./img/icons/cross.svg" alt="">

@@ -197,11 +197,11 @@ export class ExpertPage extends Page {
                             <div class="expert-card-reviews">
                                 <div class="expert-card-rating">
                                     <p class="expert-card-rating-title">загальний рейтинг</p>
-                                    <p class="expert-card-rating-numbers">4,5 / 5</p>
+                                    <p class="expert-card-rating-numbers mb-20">4,5 / 5</p>
                                 </div>
                                 <div class="expert-card-allreview">
                                     <p class="expert-card-allreview-title">загальна кількість відгуків</p>
-                                    <div class="expert-card-allreview-details">
+                                    <div class="expert-card-allreview-details mb-20">
                                         <p class="expert-card-allreview-numbers">14</p>
                                         <a class="expert-card-allreview-link" href="">Показати ще</a>
                                     </div>
@@ -249,7 +249,7 @@ export class ExpertPage extends Page {
                                 </ul>
                                 <div class="expert-card-addrating">
                                     <p class="expert-card-addrating-title">Рейтинг</p>
-                                    <p class="expert-card-addrating-text">Додайте рейтинг до вашого відгуку</p>
+                                    <p class="expert-card-addrating-text mb-12">Додайте рейтинг до вашого відгуку</p>
                                     <div class="rating-stars">
                                         <form action="">
                                             <input class="star star-5" id="star-5-2" type="radio" name="star"/>
@@ -267,7 +267,7 @@ export class ExpertPage extends Page {
                                 </div>
                                 <div class="expert-card-addreview">
                                     <p class="expert-card-addreview-title">Відгук</p>
-                                    <p class="expert-card-addreview-text">Додайте коментар до вашого відгуку</p>
+                                    <p class="expert-card-addreview-text mb-12">Додайте коментар до вашого відгуку</p>
                                     <div class="addreview-container">
                                         <div class="addreview-toolbar">
                                             <button>

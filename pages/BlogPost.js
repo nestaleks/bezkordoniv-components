@@ -13,18 +13,18 @@ export class BlogPostPage extends Page {
             <section class="blog-item">
                 <div class="container">
                     <div class="blog-item-inner">
-                        <div class="blog-item-header">
-                            <div class="blog-item-meta">
+                        <div class="blog-item-header mb-24">
+                            <div class="blog-item-meta mb-12">
                                 <span class="blog-item-date">15 березня 2024</span>
                                 <span class="blog-item-category">Медицина</span>
                             </div>
                             <h1 class="blog-item-title">Як отримати максимум користі від онлайн-консультації з лікарем: інструкція для пацієнтів</h1>
                         </div>
-                        <div class="blog-item-content">
-                            <img class="blog-item-image" src="./img/blog-item-1.png" alt="">
+                        <div class="blog-item-content mb-40">
+                            <img class="blog-item-image mb-24" src="./img/blog-item-1.png" alt="">
                             <div class="blog-item-text">
                                 <p>Онлайн-консультації з лікарями стали невід'ємною частиною сучасної медицини. Вони дозволяють отримати професійну медичну допомогу, не виходячи з дому. Однак, щоб така консультація була максимально ефективною, важливо правильно до неї підготуватися.</p>
-                                
+
                                 <h2>Підготовка до консультації</h2>
                                 <p>Перед початком консультації необхідно:</p>
                                 <ul>

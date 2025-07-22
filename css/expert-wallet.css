@@ -7,7 +7,6 @@
     border-radius: var(--radius-md);
     border: 1px solid var(--black-10);
     background-color: var(--white-100);
-    margin-bottom: 20px;
 }
 
 .expert-balance-inner{
@@ -20,7 +19,6 @@
 .expert-balance-info{
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
 }
 
 .expert-balance-info img{
@@ -154,7 +152,6 @@
     -webkit-overflow-scrolling: touch;
     min-width: 300px;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .expert-incoming-table{
@@ -304,7 +301,6 @@
     font-size: 16px;
     font-weight: 800;
     color: var(--black-50);
-    margin-bottom: 12px;
 }
 
 .payments-settings-content{

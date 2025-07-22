@@ -3,14 +3,12 @@
     border-radius: var(--radius-lg);
     border: 1px solid var(--black-10);
     padding: 12px;
-    margin-bottom: 20px;
 }
 
 .client-wallet-info{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
 }
 
 .client-wallet-info img{
@@ -39,7 +37,6 @@
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    margin-bottom: 12px;
 }
 
 .client-wallet-item{
@@ -166,7 +163,6 @@
 .wallet-history-filters{
     display: flex;
     gap: 12px;
-    margin-bottom: 20px;
 }
 
 .wallet-history-filters div{

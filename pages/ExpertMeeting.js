@@ -94,7 +94,7 @@ export class ExpertMeetingPage extends Page {
                                 <div class="meetings-card-notes-inner">
                                     <p class="meetings-card-notes-title">Нотатки</p>
                                     <p class="meetings-card-notes-text">Додайте нотатки до вашої зустрічі</p>
-                                    <div class="meetings-card-notes-list">
+                                    <div class="meetings-card-notes-list mt-12">
                                         <div class="meetings-card-notes-item">
                                             <div class="meetings-card-notes-box">
                                                 <p>12:24</p>
@@ -127,7 +127,7 @@ export class ExpertMeetingPage extends Page {
                                         </button>
                                     </div>
                                     <div class="expert-meeting-messages">
-                                        <div class="expert-meeting-chat-message message-from-client">
+                                        <div class="expert-meeting-chat-message mb-20 message-from-client">
                                             <div class="expert-meeting-message-img">
                                                 <img src="./img/expert-1.png" alt="">
                                             </div>
@@ -137,14 +137,14 @@ export class ExpertMeetingPage extends Page {
                                                 <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="expert-meeting-chat-message message-from-expert">
+                                        <div class="expert-meeting-chat-message mb-20 message-from-expert">
                                             <div class="expert-meeting-message-content">
                                                 <p class="expert-meeting-message-user">Ви<span>12:15</span></p>
                                                 <p class="expert-meeting-message-text">Доброго дня! В вас вимкнено мікрофон</p>
                                                 <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="expert-meeting-chat-message message-from-client">
+                                        <div class="expert-meeting-chat-message mb-20 message-from-client">
                                             <div class="expert-meeting-message-img">
                                                 <img src="./img/expert-1.png" alt="">
                                             </div>

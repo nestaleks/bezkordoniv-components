@@ -22,7 +22,6 @@
 .clients-content{
     display: grid;
     grid-template-areas: 'a b b b b' 'a c c c c';
-    margin-bottom: 12px;
     position: relative;
 }
 
@@ -33,7 +32,6 @@
     grid-area: a;
     object-fit: cover;
     justify-self: start;
-    margin-right: 12px;
 }
 
 .clients-name{

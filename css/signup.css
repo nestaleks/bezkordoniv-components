@@ -121,7 +121,6 @@
     font-weight: 800;
     line-height: 18px;
     color: var(--black-50);
-    margin-bottom: 20px;
 }
 
 /* Убираем все предыдущие правила для expert-step-1 и добавляем новое */
@@ -281,7 +280,6 @@ body:has(.tab-button[data-tab="expert"].active) .signup-form.step-1 .expert-step
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
 }
 
 .checkbox-container {
@@ -315,7 +313,6 @@ body:has(.tab-button[data-tab="expert"].active) .signup-form.step-1 .expert-step
 
 .social-links {
     text-align: center;
-    margin-top: 30px;
 }
 
 .social-text {
@@ -327,7 +324,6 @@ body:has(.tab-button[data-tab="expert"].active) .signup-form.step-1 .expert-step
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
 }
 
 .social-icon {
@@ -577,10 +573,6 @@ body:has(.tab-button[data-tab="expert"].active) .signup-form.step-1 .expert-step
         width: 100%;
         padding: 12px;
         font-size: 14px;
-    }
-
-    .social-links {
-        margin-top: 20px;
     }
 
     .social-icons {

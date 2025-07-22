@@ -12,7 +12,7 @@ export class ClientMeetingPage extends Page {
             <!--client-meeting-->
              <section class="client-meeting">
                 <div class="container">
-                    <h4 class="client-meeting-title">Антон Багінський. Перша Консультація</h4>
+                    <h4 class="client-meeting-title mb-20">Антон Багінський. Перша Консультація</h4>
                     <div class="client-meeting-item">
                         <div class="client-meeting-item-header">
                             <div class="client-meeting-item-date">
@@ -99,7 +99,7 @@ export class ClientMeetingPage extends Page {
                                     </div>
                                     <div class="client-meeting-chat">
                                         <div class="client-meeting-chat-box">
-                                            <div class="client-meeting-chat-message">
+                                            <div class="client-meeting-chat-message mb-20">
                                                 <div class="client-meeting-message-img">
                                                     <img src="./img/expert-1.png" alt="">
                                                 </div>

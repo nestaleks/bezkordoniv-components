@@ -3,7 +3,7 @@ import { Page } from './Page.js';
 export class FAQPage extends Page {
     render() {
         this.container.innerHTML = `
-            <div class="faq-page">
+            <div class="faq-page mt-20">
                 <!--BREADCRUMB-->
                 <nav class="breadcrumb">
                     <div class="container">
@@ -85,7 +85,7 @@ export class FAQPage extends Page {
                 <!-- Block with answers windows -->
                 <section class="faq-answers" id="consultations-1">
                     <div class="container">
-                        <button class="faq-back-button">
+                        <button class="faq-back-button mb-20">
                             <img src="./img/icons/prev-btn-gray.svg" alt="">
                             <p>Назад</p>
                         </button>
@@ -124,7 +124,7 @@ export class FAQPage extends Page {
                 </section>
                 <section class="faq-answers" id="users-1">
                     <div class="container">
-                        <button class="faq-back-button">
+                        <button class="faq-back-button mb-20">
                             <img src="./img/icons/prev-btn-gray.svg" alt="">
                             <p>Назад</p>
                         </button>
@@ -175,7 +175,7 @@ export class FAQPage extends Page {
                 </section>
                 <section class="faq-answers" id="experts-1">
                     <div class="container">
-                        <button class="faq-back-button">
+                        <button class="faq-back-button mb-20">
                             <img src="./img/icons/prev-btn-gray.svg" alt="">
                             <p>Назад</p>
                         </button>
@@ -214,7 +214,7 @@ export class FAQPage extends Page {
                 </section>
                 <section class="faq-answers" id="users-2">
                     <div class="container">
-                        <button class="faq-back-button">
+                        <button class="faq-back-button mb-20">
                             <img src="./img/icons/prev-btn-gray.svg" alt="">
                             <p>Назад</p>
                         </button>
@@ -265,7 +265,7 @@ export class FAQPage extends Page {
                 </section>
                 <section class="faq-answers" id="consultations-2">
                     <div class="container">
-                        <button class="faq-back-button">
+                        <button class="faq-back-button mb-20">
                             <img src="./img/icons/prev-btn-gray.svg" alt="">
                             <p>Назад</p>
                         </button>

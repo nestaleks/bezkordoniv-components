@@ -3,7 +3,7 @@ import { Page } from './Page.js';
 export class BlogPage extends Page {
     render() {
         this.container.innerHTML = `
-            <section class="blog-page section-lg">
+            <section class="blog-page section-lg mt-24 mb-24">
                 <div class="section-lg-inner">
                     <!--BREADCRUMB-->
                     <nav class="breadcrumb">
@@ -41,7 +41,7 @@ export class BlogPage extends Page {
                                 </div>
                             </div>
                         </div>
-                        <div class="blog-page-banner">
+                        <div class="blog-page-banner mt-20 mb-20">
                             <div class="blog-banner-left">
                                 <div class="blog-banner-images">
                                     <img class="blog-banner-ellipse-1" src="./img/about-find-ellipse-1.svg" alt="">
@@ -53,7 +53,7 @@ export class BlogPage extends Page {
                                 <img class="blog-banner-img" src="./img/icons/blog-idea.svg" alt="">
                                 <p class="blog-banner-title">Ми відкрились!</p>
                                 <p class="blog-banner-text">Запрошуємо на нашу нову онлайн-платформу, де Ви можете отримати професійні консультації з <span>медицини</span>, <span>права</span>, <span>фінансів</span> та <span>освіти</span>.</p>
-                                
+
                                 <p class="blog-banner-text">Наші фахівці говорять Вашою мовою та готові допомогти саме Вам — швидко, зручно та доступно, де б Ви не були.</p>
 
                                 <ul class="blog-banner-list">
@@ -61,14 +61,14 @@ export class BlogPage extends Page {
                                     <li>Без черг</li>
                                     <li>З турботою про Вас</li>
                                 </ul>
-                                
-                                <a class="blog-banner-link button-primary" href="">
+
+                                <a class="blog-banner-link button-primary mt-20" href="">
                                     <p>Знайти спеціаліста</p>
                                     <img src="./img/icons/details-white.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <ul class="blog-list">
+                        <ul class="blog-list mt-40">
                             <li class="blog-list-item">
                                 <div class="blog-list-content">
                                     <p class="blog-list-title">Як отримати максимум користі від онлайн-консультації з лікарем: інструкція для пацієнтів</p>
@@ -120,7 +120,7 @@ export class BlogPage extends Page {
                                 <img class="blog-list-img" src="./img/blog-item-5.png" alt="">
                             </li>
                         </ul>
-                        <div class="blog-list-pagination">
+                        <div class="blog-list-pagination mt-20">
                             <ul class="blog-list-pagination-pages">
                                 <li class="blog-list-pagination-page active">1</li>
                                 <li class="blog-list-pagination-page">2</li>

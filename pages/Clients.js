@@ -114,8 +114,8 @@ export class ClientsPage extends Page {
                     <!--Clients list-->
                     <ul class="clients-list">
                         <li class="clients-card">
-                            <div class="clients-content">
-                                <img class="clients-img" src="./img/expert-7.png" alt="">
+                            <div class="clients-content mb-12">
+                                <img class="clients-img mb-12" src="./img/expert-7.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Константин Вакуленко</a>
                                 <div class="clients-data">
                                     <div class="clients-appoints highlight-pill">
@@ -157,8 +157,8 @@ export class ClientsPage extends Page {
                             </div>
                         </li>
                         <li class="clients-card">
-                            <div class="clients-content">
-                                <img class="clients-img" src="./img/expert-8.png" alt="">
+                            <div class="clients-content mb-12">
+                                <img class="clients-img mb-12" src="./img/expert-8.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Карина Мартиненко</a>
                                 <div class="clients-data">
                                     <div class="clients-appoints highlight-pill">
@@ -200,8 +200,8 @@ export class ClientsPage extends Page {
                             </div>
                         </li>
                         <li class="clients-card">
-                            <div class="clients-content">
-                                <img class="clients-img" src="./img/expert-9.png" alt="">
+                            <div class="clients-content mb-12">
+                                <img class="clients-img mb-12" src="./img/expert-9.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Іванна Поліщук</a>
                                 <div class="clients-data">
                                     <div class="clients-appoints highlight-pill">
@@ -243,8 +243,8 @@ export class ClientsPage extends Page {
                             </div>
                         </li>
                         <li class="clients-card">
-                            <div class="clients-content">
-                                <img class="clients-img" src="./img/expert-10.png" alt="">
+                            <div class="clients-content mb-12">
+                                <img class="clients-img mb-12" src="./img/expert-10.png" alt="">
                                 <a class="clients-name" href="./client-page.html">Остап Шевченко</a>
                                 <div class="clients-data">
                                     <div class="clients-appoints highlight-pill">

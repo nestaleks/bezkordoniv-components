@@ -21,8 +21,8 @@ export class HomePage extends Page {
                 <div class="search-box-inner">
                     <div class="search-container">
                         <div class="search-block">
-                            <p class="search-box-title">Об'єднуймо <span>українців та експертів</span> без кордонів</p>
-                            <p class="search-box-text">Онлайн-консультації з медицини, права, фінансів та освіти від професіоналів, які розуміють Вашу мову</p>
+                            <p class="search-box-title mt-20 mb-12">Об'єднуймо <span>українців та експертів</span> без кордонів</p>
+                            <p class="search-box-text mb-20">Онлайн-консультації з медицини, права, фінансів та освіти від професіоналів, які розуміють Вашу мову</p>
                             <div class="input-container">
                                 <div class="search-input-name">
                                     <img src="./img/icons/search.svg" alt="">
@@ -172,7 +172,7 @@ export class HomePage extends Page {
             <!--TOP EXPERTS-->
             <section class="top-experts section-lg">
                 <div class="section-lg-inner">
-                    <div class="top-experts-header">
+                    <div class="top-experts-header mb-20">
                         <p class="section-title">Топ Експерти</p>
                         <div class="top-experts-pagination">
                             <svg class="top-experts-arrow arrow-prev" width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -347,7 +347,7 @@ export class HomePage extends Page {
                 <div class="section-lg-inner">
                     <div class="how-to-order-inner">
                         <p class="section-title">Як замовити?</p>
-                        <ul class="how-to-order-list">
+                        <ul class="how-to-order-list mt-20">
                             <li class="how-to-order-item">
                                 <div class="how-to-order-images">
                                     <img class="how-to-order-ellipse-1" src="./img/how-to-order-1a.svg" alt="">
@@ -396,7 +396,7 @@ export class HomePage extends Page {
                             </div>
                             <div class="who-need-it-contact-md">
                                 <p class="who-need-it-text">Наша екосистема об'єднує українських експертів із різних галузей для вашої підтримки. Отримуйте консультації онлайн у зручний час, рідною мовою та без географічних обмежень.</p>
-                                <a class="who-need-it-link" href="">
+                                <a class="who-need-it-link mt-20" href="">
                                     <p>Знайти спеціаліста</p>
                                     <img src="./img/icons/details-white.svg" alt="">
                                 </a>
@@ -416,7 +416,7 @@ export class HomePage extends Page {
                             </ul>
                             <div class="who-need-it-contact-lg">
                                 <p class="who-need-it-text">Наша екосистема об'єднує українських експертів із різних галузей для вашої підтримки. Отримуйте консультації онлайн у зручний час, рідною мовою та без географічних обмежень.</p>
-                                <a class="who-need-it-link" href="">
+                                <a class="who-need-it-link mt-20" href="">
                                     <p>Знайти спеціаліста</p>
                                     <img src="./img/icons/details-white.svg" alt="">
                                 </a>
@@ -509,7 +509,7 @@ export class HomePage extends Page {
                 <div class="section-lg-inner">
                     <div class="advantages-inner">
                         <p class="section-title">Переваги онлайн консультації</p>
-                        <div class="advantages-banners">
+                        <div class="advantages-banners mt-20 mb-20">
                             <div class="advantages-banner">
                                 <img class="advantages-banner-img" src="./img/advantages-1.svg" alt="">
                                 <p class="advantages-banner-title">Доступність</p>
@@ -531,7 +531,7 @@ export class HomePage extends Page {
                                 <p class="advantages-banner-text">Платформа постійно розширюється, додаючи нові послуги</p>
                             </div>
                         </div>
-                        <div class="advantages-numbers">
+                        <div class="advantages-numbers mb-20">
                             <div class="advantages-number">
                                 <p class="advantages-number-title">+12600</p>
                                 <p class="advantages-number-text">Проведених консультацій</p>
@@ -555,7 +555,7 @@ export class HomePage extends Page {
             <!--QUESTIONS-->
             <section class="questions section-lg"  id="faq">
                 <div class="section-lg-inner">
-                    <div class="questions-header">
+                    <div class="questions-header mb-20">
                         <p class="section-title">Часті запитання</p>
                         <a href="./faq.html" class="questions-more">
                             <p>Детальніше</p>

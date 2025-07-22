@@ -42,7 +42,7 @@ export class ClientChatPage extends Page {
                             </div>
                             <ul class="chat-list">
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-1.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-expert-name">Антон Багінський</p>
@@ -58,7 +58,7 @@ export class ClientChatPage extends Page {
                                     </div>
                                 </li>
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-1.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-expert-name">Антон Багінський</p>
@@ -74,7 +74,7 @@ export class ClientChatPage extends Page {
                                     </div>
                                 </li>
                                 <li class="chat-list-item">
-                                    <div class="chat-list-item-header">
+                                    <div class="chat-list-item-header mb-12">
                                         <img class="chat-list-item-img" src="./img/expert-3.png" alt="">
                                         <div class="chat-list-item-about">
                                             <p class="chat-list-item-expert-name">Ганна Степанова</p>
@@ -145,7 +145,7 @@ export class ClientChatPage extends Page {
                                 </button>
                             </div>
                             <div class="client-chat-messages">
-                                <div class="client-chat-message client-chat-from-expert">
+                                <div class="client-chat-message mb-20 client-chat-from-expert">
                                     <div class="client-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>
@@ -155,14 +155,14 @@ export class ClientChatPage extends Page {
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="client-chat-message client-chat-from-client">
+                                <div class="client-chat-message mb-20 client-chat-from-client">
                                     <div class="client-chat-message-content">
                                         <p class="client-chat-message-user">Ви<span>12:15</span></p>
                                         <p class="client-chat-message-text">Доброго дня! В вас вимкнено мікрофон</p>
                                         <img class="message-status" src="./img/icons/message-read.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="client-chat-message client-chat-from-expert">
+                                <div class="client-chat-message mb-20 client-chat-from-expert">
                                     <div class="client-chat-message-img">
                                         <img src="./img/expert-1.png" alt="">
                                     </div>

@@ -12,7 +12,7 @@ export class SignUpPage extends Page {
                 </div>
                 <div class="signup-container">
                     <h2 class="signup-title">Реєстрація</h2>
-                    
+
                     <div class="signup-tabs">
                         <button class="tab-button active" data-tab="client">
                             <p>Клієнт</p>
@@ -23,10 +23,10 @@ export class SignUpPage extends Page {
                             <img class="tab-button-img" src="./img/icons/signup-expert.svg" alt="">
                         </button>
                     </div>
-            
+
                     <!-- Sign up for clients and Step 1 for Experts -->
                     <form class="signup-form step-1">
-                        <div class="expert-step-1">
+                        <div class="expert-step-1 mb-20">
                             <div class="step-1-item">
                                 <img src="./img/icons/location-blue.svg" alt="">
                                 <p>1 Крок. Контактна Інформація</p>
@@ -70,7 +70,7 @@ export class SignUpPage extends Page {
                                 <input type="password" placeholder="Підтвердити пароль" class="form-input">
                             </div>
                         </div>
-            
+
                         <div class="form-row">
                             <div class="form-group">
                                 <select class="form-select">
@@ -90,7 +90,7 @@ export class SignUpPage extends Page {
                                 </select>
                             </div>
                         </div>
-            
+
                         <div class="form-row">
                             <div class="form-group">
                                 <select class="form-select">
@@ -111,11 +111,11 @@ export class SignUpPage extends Page {
                                 </select>
                             </div>
                         </div>
-            
+
                         <div class="form-group">
                             <input type="text" placeholder="Вулиця" class="form-input">
                         </div>
-            
+
                         <div class="form-row">
                             <div class="form-group">
                                 <input type="text" placeholder="Дім" class="form-input">
@@ -124,7 +124,7 @@ export class SignUpPage extends Page {
                                 <input type="text" placeholder="Поштовий індекс" class="form-input">
                             </div>
                         </div>
-            
+
                         <div class="form-group">
                             <select class="form-select">
                                 <option value="" disabled selected>Мова</option>
@@ -162,7 +162,7 @@ export class SignUpPage extends Page {
                     </form>
                     <!-- Sign up Step 2 for Experts -->
                     <form class="signup-form step-2">
-                        <div class="expert-step-2">
+                        <div class="expert-step-2 mb-20">
                             <div class="step-2-item">
                                 <img src="./img/icons/location.svg" alt="">
                                 <p>1 Крок. Контактна Інформація</p>
@@ -173,7 +173,7 @@ export class SignUpPage extends Page {
                                 <p>2 Крок. Професійна Інформація</p>
                             </div>
                         </div>
-            
+
                         <div class="form-row">
                             <div class="form-group">
                                 <select class="form-select">
@@ -195,7 +195,7 @@ export class SignUpPage extends Page {
                                 <p class="form-undertext">Оберіть вашу спеціальність</p>
                             </div>
                         </div>
-            
+
                         <div class="form-row">
                             <div class="form-group">
                                 <select class="form-select">
@@ -218,8 +218,8 @@ export class SignUpPage extends Page {
                                 <p class="form-undertext">Вкажіть ціну за консультацію</p>
                             </div>
                         </div>
-            
-                        <div class="form-group terms expert-terms">
+
+                        <div class="form-group terms expert-terms mt-24">
                             <label class="checkbox-container">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
@@ -227,9 +227,9 @@ export class SignUpPage extends Page {
                             </label>
                         </div>
 
-                        <div class="social-links">
+                        <div class="social-links mt-24">
                             <div class="social-text">Зареєструйся за допомогою</div>
-                            <div class="social-icons">
+                            <div class="social-icons mb-24">
                                 <a href="#" class="social-icon"><img src="./img/icons/facebook.svg" alt="Facebook"></a>
                                 <a href="#" class="social-icon"><img src="./img/icons/instagram.svg" alt="Instagram"></a>
                                 <a href="#" class="social-icon"><img src="./img/icons/linkedin.svg" alt="LinkedIn"></a>

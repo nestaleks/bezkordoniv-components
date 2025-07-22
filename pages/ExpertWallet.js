@@ -13,9 +13,9 @@ export class ExpertWalletPage extends Page {
             <section class="expert-wallet-page">
                 <div class="container">
                     <h4 class="expert-wallet-title page-title">Гаманець</h4>
-                    <div class="expert-balance">
+                    <div class="expert-balance mb-20">
                         <div class="expert-balance-inner">
-                            <div class="expert-balance-info">
+                            <div class="expert-balance-info mb-12">
                                 <img src="./img/icons/money-blue.svg" alt="">
                                 <div class="expert-balance-text">
                                     <p>доступний баланс</p>
@@ -112,7 +112,7 @@ export class ExpertWalletPage extends Page {
                             </div>
                         </div>
                         <div class="expert-wallet-incoming">
-                            <div class="expert-incoming-table-container">
+                            <div class="expert-incoming-table-container mb-20">
                                 <table class="expert-incoming-table">
                                     <thead>
                                         <tr>
@@ -229,7 +229,7 @@ export class ExpertWalletPage extends Page {
                             <div class="expert-wallet-notify">
                                 <p>Трансакції можуть тривати до 3-5 робочих днів</p>
                             </div>
-                            <div class="expert-outcoming-table-container">
+                            <div class="expert-outcoming-table-container mb-20">
                                 <table class="expert-outcoming-table">
                                     <thead>
                                         <tr>
@@ -307,7 +307,7 @@ export class ExpertWalletPage extends Page {
                         </div>
                         <div class="payments-settings-inner">
                             <div class="payments-settings-personal">
-                                <p class="payments-settings-title">Інформація про одержувача виплати</p>
+                                <p class="payments-settings-title mb-12">Інформація про одержувача виплати</p>
                                 <div class="payments-settings-content">
                                     <p class="payments-settings-content-title">Одержувач</p>
                                     <div class="payments-settings-content-item">
@@ -375,7 +375,7 @@ export class ExpertWalletPage extends Page {
                                 </div>
                             </div>
                             <div class="payments-settings-financial">
-                                <p class="payments-settings-title">Банківська Інформація</p>
+                                <p class="payments-settings-title mb-12">Банківська Інформація</p>
                                 <div class="payments-settings-content">
                                     <p class="payments-settings-content-title">Номер рахунку / IBAN</p>
                                     <div class="payments-settings-content-item">

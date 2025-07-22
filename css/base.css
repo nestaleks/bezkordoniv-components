@@ -142,6 +142,12 @@ section {
 .mb-20{
     margin-bottom: 20px;
 }
+.ml-20{
+    margin-left: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
 .mt-24{
     margin-top: 24px;
 }
@@ -153,6 +159,18 @@ section {
 }
 .mr-24 {
     margin-right: 24px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.mr-40 {
+    margin-right: 40px;
 }
 
 #app {

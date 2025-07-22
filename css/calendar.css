@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 .calendar-header h2{
     display: none;
@@ -43,7 +42,6 @@
     line-height: 1;
 }
 #selected-period-btn {
-    /* min-width: 150px; */
     font-weight: 700;
     font-size: 16px;
     background-color: transparent;
