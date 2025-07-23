@@ -17,8 +17,7 @@
 @import url('./css/modal.css');
 /* UI Components (consolidated) */
 @import url('./css/ui-components.css');
-/* Calendar  */
-@import url('./css/calendar.css');
+
 
 /* Import pages styles */
 /* Home */
@@ -31,29 +30,23 @@
 @import url('./css/dashboard.css');
 /* Experts List */
 @import url('./css/experts.css');
-/* Client Meetings List*/
+/* Client Meetings (consolidated) */
 @import url('./css/client-meetings.css');
-/* Client Meeting*/
-@import url('./css/client-meeting.css');
-/* Expert Meetings List*/
+/* Expert Meetings (consolidated) */
 @import url('./css/expert-meetings.css');
-/* Expert Meeting*/
-@import url('./css/expert-meeting.css');
 /* Profiles (consolidated) */
 @import url('./css/profiles.css');
-/* Client Wallet */
-@import url('./css/client-wallet.css');
-/* Expert Wallet */
-@import url('./css/expert-wallet.css');
+/* Wallets (consolidated) */
+@import url('./css/wallets.css');
 /* Clients*/
 @import url('./css/clients.css');
-/* Client Chat */
-@import url('./css/client-chat.css');
-/* Expert Chat */
-@import url('./css/expert-chat.css');
+/* Chats (consolidated) */
+@import url('./css/chats.css');
 /* 404 */
 @import url('./css/404.css');
 /* Blog page*/
 @import url('./css/blog.css');
 /* About page*/
 @import url('./css/about.css');
+/* Calendar  */
+@import url('./css/calendar.css');
