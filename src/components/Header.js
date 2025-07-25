@@ -133,6 +133,12 @@ const Header = (props = {}) => {
                         <span></span>
                     </div>
                 </div>
+                
+                <!-- View Mode Toggle (positioned 20px below header) -->
+                <div class="view-mode-toggle" style="position: absolute; top: calc(100% + 20px); left: 50%; transform: translateX(-50%); z-index: 1000;">
+                    <button class="view-toggle-btn active" data-view="expert">ExpertView</button>
+                    <button class="view-toggle-btn" data-view="client">ClientView</button>
+                </div>
                 <!-- First divider line -->
                 <div class="header-divider"></div>
 
@@ -140,25 +146,25 @@ const Header = (props = {}) => {
                 <nav class="menu">
                     <ul class="menu-list">
                         <!-- General menu items (показываем все пункты как запрошено) -->
-                        <li class="menu-item">
+                        <li class="menu-item menu-for-all">
                             <a href="/" class="menu-link" data-link>
                                 ${icons.home}
                                 <p class="menu-item-text">Головна</p>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item menu-for-all">
                             <a href="/dashboard" class="menu-link" data-link>
                                 ${icons.dashboard}
                                 <p class="menu-item-text">інформаційна панель</p>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item menu-for-all">
                             <a href="/about" class="menu-link" data-link>
                                 ${icons.info}
                                 <p class="menu-item-text">Про нас</p>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item menu-for-all">
                             <a href="/experts" class="menu-link" data-link>
                                 ${icons.experts}
                                 <p class="menu-item-text">Експерти</p>
@@ -206,7 +212,7 @@ const Header = (props = {}) => {
                                 <p class="menu-item-text">Профіль</p>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item menu-for-all">
                             <a href="/calendar" class="menu-link" data-link>
                                 ${icons.calendar}
                                 <p class="menu-item-text">Календар</p>
@@ -228,6 +234,50 @@ const Header = (props = {}) => {
         </header>
     `;
 };
+
+// Function to initialize view toggle functionality
+Header.initViewToggle = function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButtons = document.querySelectorAll('.view-toggle-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        function updateMenuVisibility(viewMode) {
+            menuItems.forEach(item => {
+                const isForAll = item.classList.contains('menu-for-all');
+                const isForExpert = item.classList.contains('menu-for-expert');
+                const isForClient = item.classList.contains('menu-for-client');
+                
+                if (isForAll) {
+                    item.style.display = 'block';
+                } else if (viewMode === 'expert' && (isForAll || isForExpert)) {
+                    item.style.display = 'block';
+                } else if (viewMode === 'client' && (isForAll || isForClient)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const viewMode = this.getAttribute('data-view');
+                updateMenuVisibility(viewMode);
+            });
+        });
+        
+        // Initialize with expert view
+        updateMenuVisibility('expert');
+    });
+};
+
+// Auto-initialize if in browser environment
+if (typeof window !== 'undefined') {
+    Header.initViewToggle();
+}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = Header;
