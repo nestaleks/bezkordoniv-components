@@ -1,0 +1,34 @@
+# Windows cache files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS cache files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+
+# Node modules (if using npm)
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Test files
+test_*.html
+*_test.html
+demo_*.html
+*_demo.html

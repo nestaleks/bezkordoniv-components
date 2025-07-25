@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Component Builder</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="app">
+        <header id="header"></header>
+        <main id="main"></main>
+        <footer id="footer"></footer>
+    </div>
+
+    <!-- Подключаем компоненты -->
+    <script src="src/components/Header.js"></script>
+    <script src="src/components/Footer.js"></script>
+    <script src="src/components/Button.js"></script>
+    <script src="src/components/Card.js"></script>
+    <script src="src/components/Form.js"></script>
+    <script src="src/components/Breadcrumb.js"></script>
+    
+    <!-- Подключаем страницы -->
+    <script src="src/pages/Home.js"></script>
+    <script src="src/pages/About.js"></script>
+    <script src="src/pages/FAQ.js"></script>
+    <script src="src/pages/Login.js"></script>
+    <script src="src/pages/SignUp.js"></script>
+    <script src="src/pages/ResetPassword.js"></script>
+    <script src="src/pages/Calendar.js"></script>
+    <script src="src/pages/Blog.js"></script>
+    <script src="src/pages/BlogPost.js"></script>
+    <script src="src/pages/Dashboard.js"></script>
+    <script src="src/pages/404.js"></script>
+    
+    <!-- Expert pages -->
+    <script src="src/pages/Experts.js"></script>
+    <script src="src/pages/ExpertPage.js"></script>
+    <script src="src/pages/ExpertProfile.js"></script>
+    <script src="src/pages/ExpertWallet.js"></script>
+    <script src="src/pages/ExpertMeetings.js"></script>
+    <script src="src/pages/ExpertMeeting.js"></script>
+    <script src="src/pages/ExpertChat.js"></script>
+    
+    <!-- Client pages -->
+    <script src="src/pages/Clients.js"></script>
+    <script src="src/pages/ClientPage.js"></script>
+    <script src="src/pages/ClientProfile.js"></script>
+    <script src="src/pages/ClientWallet.js"></script>
+    <script src="src/pages/ClientMeetings.js"></script>
+    <script src="src/pages/ClientMeeting.js"></script>
+    <script src="src/pages/ClientChat.js"></script>
+    
+    <!-- Подключаем основной файл -->
+    <script src="src/index.js"></script>
+    
+    <!-- Подключаем main.js для мобильного меню -->
+    <script src="src/js/main.js"></script>
+    
+    <!-- Подключаем систему модальных окон -->
+    <script src="src/js/modal.js"></script>
+    
+    <script>
+        // Глобальное состояние пользователя (пример)
+        // В реальном проекте это будет управляться вашей системой аутентификации
+        window.userState = {
+            isLoggedIn: false, // измените на true для тестирования авторизованного состояния
+            userRole: 'client', // 'client' или 'expert'
+            balance: '$120.00',
+            nextAppointment: '12:34:47',
+            messagesCount: 15,
+            noticesCount: 5
+        };
+
+        // Инициализация компонентов
+        const app = new ComponentBuilder();
+        
+        // Рендерим header - теперь он автоматически читает window.userState
+        app.render('header', 'Header', {
+            logo: 'Без Кордонів',
+            logoImage: './src/img/logo.svg'
+        });
+        
+        app.render('main', 'Home');
+        
+        app.render('footer', 'Footer', {
+            companyName: 'Без Кордонів',
+            description: 'Платформа для пошуку експертів та клієнтів без кордонів',
+            socialLinks: [
+                { name: 'GitHub', url: 'https://github.com', icon: '📚' },
+                { name: 'Telegram', url: 'https://telegram.org', icon: '📱' },
+                { name: 'LinkedIn', url: 'https://linkedin.com', icon: '💼' }
+            ]
+        });
+
+        // Функция для тестирования разных состояний (можно вызвать из консоли)
+        window.testUserState = function(state) {
+            Object.assign(window.userState, state);
+            // Перерендерим header
+            app.render('header', 'Header', {
+                logo: 'Без Кордонів',
+                logoImage: './src/img/logo.svg'
+            });
+        };
+
+        // Функция для переключения страниц (для тестирования)
+        window.switchPage = function(pageName) {
+            const validPages = ['Home', 'About', 'FAQ', 'MainContent'];
+            if (validPages.includes(pageName)) {
+                app.render('main', pageName);
+            } else {
+                console.error('Неизвестная страница:', pageName);
+            }
+        };
+
+        // Примеры использования:
+        // switchPage('Home') - главная страница
+        // switchPage('About') - страница о нас  
+        // switchPage('FAQ') - часті питання
+        // testUserState({isLoggedIn: true, userRole: 'client', balance: '$250.50'});
+        // testUserState({isLoggedIn: true, userRole: 'expert', balance: '$1,240.75'});
+        // testUserState({isLoggedIn: false});
+    </script>
+</body>
+</html>

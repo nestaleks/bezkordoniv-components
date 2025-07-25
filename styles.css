@@ -1,0 +1,52 @@
+/* Bez kordoniv styles */
+
+/* Import main styles */
+@import url('./src/css/reset.css');
+@import url('./src/css/variables.css');
+@import url('./src/css/fonts.css');
+@import url('./src/css/base.css');
+
+/* Import component styles */
+
+
+/* UI Components (consolidated) */
+@import url('./src/css/ui-components.css');
+/* Header styles */
+@import url('./src/css/header.css');
+/* Footer styles */
+@import url('./src/css/footer.css');
+/* Modal styles */
+@import url('./src/css/modal.css');
+
+
+/* Import pages styles */
+/* Home */
+@import url('./src/css/index.css');
+/* Authentication (consolidated) */
+@import url('./src/css/auth.css');
+/* FAQ */
+@import url('./src/css/faq.css');
+/* Dashboard */
+@import url('./src/css/dashboard.css');
+/* Experts List */
+@import url('./src/css/experts.css');
+/* Client Meetings (consolidated) */
+@import url('./src/css/client-meetings.css');
+/* Expert Meetings (consolidated) */
+@import url('./src/css/expert-meetings.css');
+/* Profiles (consolidated) */
+@import url('./src/css/profiles.css');
+/* Wallets (consolidated) */
+@import url('./src/css/wallets.css');
+/* Clients*/
+@import url('./src/css/clients.css');
+/* Chats (consolidated) */
+@import url('./src/css/chats.css');
+/* 404 */
+@import url('./src/css/404.css');
+/* Blog page*/
+@import url('./src/css/blog.css');
+/* About page*/
+@import url('./src/css/about.css');
+/* Calendar  */
+@import url('./src/css/calendar.css');

@@ -1,0 +1,17 @@
+{
+  "name": "html-component-builder",
+  "version": "1.0.0",
+  "description": "JavaScript library for building HTML pages from components",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server ."
+  },
+  "keywords": ["html", "components", "builder", "javascript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
