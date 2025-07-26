@@ -20,7 +20,8 @@ const Breadcrumb = (props = {}) => {
         "Calendar": { title: "Календар", icon: "./src/img/icons/calendar.svg", parent: "Home" },
         "Meetings": { title: "Мої Зустрічі", icon: "./src/img/icons/calendar.svg", parent: "Home" },
         "Chat": { title: "Повідомлення", icon: "./src/img/icons/message-blue.svg", parent: "Home" },
-        "Blog": { title: "Блог", icon: "./src/img/icons/write.svg", parent: "Home" }
+        "Blog": { title: "Блог", icon: "./src/img/icons/write.svg", parent: "Home" },
+        "BlogPost": { title: "Стаття", icon: "./src/img/icons/write.svg", parent: "Blog" }
     };
 
     // Функция для получения trail (цепочки) страниц

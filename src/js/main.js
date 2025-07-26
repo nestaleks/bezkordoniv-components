@@ -18,12 +18,12 @@ function updateHeader(isLoggedIn) {
     const loginMenuItems = document.querySelectorAll('.menu-if-login');
 
     if (isLoggedIn) {
-        logoutBlock.classList.add('hidden');
-        loginBlock.classList.remove('hidden');
+        if (logoutBlock) logoutBlock.classList.add('hidden');
+        if (loginBlock) loginBlock.classList.remove('hidden');
         loginMenuItems.forEach(item => item.classList.remove('hidden'));
     } else {
-        logoutBlock.classList.remove('hidden');
-        loginBlock.classList.add('hidden');
+        if (logoutBlock) logoutBlock.classList.remove('hidden');
+        if (loginBlock) loginBlock.classList.add('hidden');
         loginMenuItems.forEach(item => item.classList.add('hidden'));
     }
 }

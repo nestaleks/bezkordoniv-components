@@ -1,13 +1,12 @@
 // Компонент ClientProfile - особистий профіль клієнта
 const ClientProfile = (props = {}) => {
+    // Создаем breadcrumb для страницы ClientProfile
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Profile' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--FAQ-->
              <section class="client-profile-page">
                 <div class="container">

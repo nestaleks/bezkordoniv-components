@@ -351,6 +351,7 @@ body:has(.tab-button[data-tab="expert"].active) .signup-form.step-1 .expert-step
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+    font-family: Circe;
     transition: border-color 0.3s ease;
 }
 

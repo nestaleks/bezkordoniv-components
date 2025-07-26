@@ -384,10 +384,12 @@
 
 .expert-history-dropdown .form-select{
     padding: 8px;
+    font-family: Circe;
 }
 
 .expert-history-dropdown .form-input{
     padding: 8px;
+    font-family: Circe;
 }
 
 .expert-incoming-table-container,

@@ -91,10 +91,6 @@ class ComponentBuilder {
             this.register('ResetPassword', ResetPassword);
         }
         
-        if (typeof Calendar !== 'undefined') {
-            this.register('Calendar', Calendar);
-        }
-        
         if (typeof Blog !== 'undefined') {
             this.register('Blog', Blog);
         }
@@ -139,6 +135,10 @@ class ComponentBuilder {
         if (typeof ExpertChat !== 'undefined') {
             this.register('ExpertChat', ExpertChat);
         }
+
+        if (typeof ExpertCalendar !== 'undefined') {
+            this.register('ExpertCalendar', ExpertCalendar);
+        }
         
         // Загружаем страницы клиентов
         if (typeof Clients !== 'undefined') {
@@ -167,6 +167,10 @@ class ComponentBuilder {
         
         if (typeof ClientChat !== 'undefined') {
             this.register('ClientChat', ClientChat);
+        }
+
+        if (typeof ClientCalendar !== 'undefined') {
+            this.register('ClientCalendar', ClientCalendar);
         }
     }
 
@@ -240,6 +244,194 @@ class ComponentBuilder {
             }, 200);
         }
 
+        // Специальная инициализация для Experts страницы
+        if (componentName === 'Experts') {
+            console.log('Initializing Experts page slider');
+            setTimeout(() => {
+                // Инициализируем слайдер экспертов для Experts страницы
+                if (typeof initExpertsSlider === 'function') {
+                    initExpertsSlider();
+                }
+                console.log('Experts page initialization completed');
+            }, 200);
+        }
+
+        // Специальная инициализация для Calendar страницы
+        if (componentName === 'Calendar') {
+            console.log('Initializing Calendar page tabs');
+            setTimeout(() => {
+                // Инициализируем переключение табов календаря
+                const viewButtons = document.querySelectorAll('.view-btn');
+                const dayView = document.querySelector('.calendar-day');
+                const weekView = document.querySelector('.calendar-week');
+                const monthView = document.querySelector('.calendar-month');
+
+                if (viewButtons.length && dayView && weekView && monthView) {
+                    console.log('Calendar tab elements found, initializing...');
+                    
+                    // По умолчанию показываем day view
+                    dayView.style.display = 'table';
+                    weekView.style.display = 'none';
+                    monthView.style.display = 'none';
+
+                    // Добавляем обработчики для кнопок переключения
+                    viewButtons.forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            // Убираем активный класс у всех кнопок
+                            viewButtons.forEach(b => b.classList.remove('active'));
+                            // Добавляем активный класс к нажатой кнопке
+                            this.classList.add('active');
+                            
+                            const view = this.dataset.view;
+                            console.log('Switching to view:', view);
+                            
+                            // Скрываем все виды
+                            dayView.style.display = 'none';
+                            weekView.style.display = 'none';
+                            monthView.style.display = 'none';
+
+                            // Показываем выбранный вид
+                            switch(view) {
+                                case 'day':
+                                    dayView.style.display = 'table';
+                                    break;
+                                case 'week':
+                                    weekView.style.display = 'table';
+                                    break;
+                                case 'month':
+                                    monthView.style.display = 'table';
+                                    break;
+                            }
+                        });
+                    });
+                    
+                    console.log('Calendar tabs initialization completed');
+                } else {
+                    console.warn('Calendar tab elements not found');
+                }
+            }, 200);
+        }
+
+        // Специальная инициализация для FAQ страницы
+        if (componentName === 'FAQ') {
+            console.log('Initializing FAQ page filters');
+            setTimeout(() => {
+                // Инициализируем фильтрацию FAQ элементов
+                const faqTabs = document.querySelectorAll('.faq-tabs-all, .faq-tabs-for-all, .faq-tabs-for-clients, .faq-tabs-for-experts');
+                const faqItems = document.querySelectorAll('.faq-content-item');
+
+                if (faqTabs.length && faqItems.length) {
+                    console.log('FAQ filter elements found, initializing...');
+                    
+                    // По умолчанию показываем все элементы
+                    faqItems.forEach(item => item.style.display = 'block');
+
+                    // Добавляем обработчики для табов
+                    faqTabs.forEach(tab => {
+                        tab.addEventListener('click', function() {
+                            // Убираем активный класс у всех табов
+                            faqTabs.forEach(t => t.classList.remove('active'));
+                            // Добавляем активный класс к нажатому табу
+                            this.classList.add('active');
+                            
+                            console.log('FAQ filter clicked:', this.className);
+                            
+                            // Определяем тип фильтра
+                            if (this.classList.contains('faq-tabs-all')) {
+                                // Показываем все элементы
+                                faqItems.forEach(item => item.style.display = 'block');
+                                console.log('Showing all FAQ items');
+                            } else if (this.classList.contains('faq-tabs-for-all')) {
+                                // Показываем только загальні
+                                faqItems.forEach(item => {
+                                    if (item.classList.contains('faq-for-all')) {
+                                        item.style.display = 'block';
+                                    } else {
+                                        item.style.display = 'none';
+                                    }
+                                });
+                                console.log('Showing general FAQ items');
+                            } else if (this.classList.contains('faq-tabs-for-clients')) {
+                                // Показываем только для клиентов
+                                faqItems.forEach(item => {
+                                    if (item.classList.contains('faq-for-clients')) {
+                                        item.style.display = 'block';
+                                    } else {
+                                        item.style.display = 'none';
+                                    }
+                                });
+                                console.log('Showing client FAQ items');
+                            } else if (this.classList.contains('faq-tabs-for-experts')) {
+                                // Показываем только для экспертов
+                                faqItems.forEach(item => {
+                                    if (item.classList.contains('faq-for-experts')) {
+                                        item.style.display = 'block';
+                                    } else {
+                                        item.style.display = 'none';
+                                    }
+                                });
+                                console.log('Showing expert FAQ items');
+                            }
+                        });
+                    });
+                    
+                    console.log('FAQ filters initialization completed');
+                } else {
+                    console.warn('FAQ filter elements not found');
+                }
+
+                // Инициализируем навигацию FAQ (переход к ответам)
+                const faqContent = document.querySelector('.faq-content');
+                const faqAnswers = document.querySelectorAll('.faq-answers');
+                const backButtons = document.querySelectorAll('.faq-back-button');
+                
+                if (faqContent && faqAnswers.length) {
+                    console.log('FAQ navigation elements found, initializing...');
+                    
+                    // Скрываем все секции ответов изначально
+                    faqAnswers.forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    
+                    // Обработчик клика по элементам FAQ контента
+                    document.querySelectorAll('.faq-content-item').forEach(item => {
+                        item.addEventListener('click', () => {
+                            const answersId = item.getAttribute('data-answers');
+                            if (answersId) {
+                                console.log('FAQ item clicked, showing answers:', answersId);
+                                // Скрываем основной FAQ контент
+                                faqContent.style.display = 'none';
+                                
+                                // Показываем соответствующую секцию ответов
+                                const answersSection = document.getElementById(answersId);
+                                if (answersSection) {
+                                    answersSection.style.display = 'block';
+                                }
+                            }
+                        });
+                    });
+                    
+                    // Обработчик кнопок "Назад"
+                    backButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            console.log('FAQ back button clicked');
+                            // Скрываем все секции ответов
+                            faqAnswers.forEach(section => {
+                                section.style.display = 'none';
+                            });
+                            
+                            // Показываем основной FAQ контент
+                            faqContent.style.display = 'grid';
+                        });
+                    });
+                    
+                    console.log('FAQ navigation initialization completed');
+                } else {
+                    console.warn('FAQ navigation elements not found');
+                }
+            }, 200);
+        }
+
         // Обработчики для Header компонента
         if (componentName === 'Header') {
             // Обработчик мобильного меню (бургер)
@@ -309,6 +501,9 @@ class ComponentBuilder {
                             break;
                         case '/expert-chat':
                             pageName = 'ExpertChat';
+                            break;
+                        case '/expert-calendar':
+                            pageName = 'ExpertCalendar';
                             break;
                         case '/client-wallet':
                             pageName = 'ClientWallet';
@@ -383,6 +578,12 @@ class ComponentBuilder {
                     case '/calendar':
                         pageName = 'Calendar';
                         break;
+                    case '/client-calendar':
+                        pageName = 'ClientCalendar';
+                        break;
+                    case '/expert-calendar':
+                        pageName = 'ExpertCalendar';
+                        break;
                     case '/blog':
                         pageName = 'Blog';
                         break;
@@ -430,6 +631,9 @@ class ComponentBuilder {
                         break;
                     case '/client-chat':
                         pageName = 'ClientChat';
+                        break;
+                    case '/expert-calendar':
+                        pageName = 'ExpertCalendar';
                         break;
                     default:
                         console.log('Страница не найдена для:', href);
@@ -760,6 +964,72 @@ class ComponentBuilder {
                     }
                 });
             });
+        }
+
+        // Специальная инициализация для ExpertCalendar
+        if (componentName === 'ExpertCalendar') {
+            console.log('Initializing ExpertCalendar page');
+            setTimeout(() => {
+                if (typeof window.initExpertCalendar === 'function') {
+                    console.log('DOM content before init:', document.querySelector('.expert-calendar-button-create') ? 'button found' : 'button NOT found');
+                    console.log('Form before init:', document.querySelector('.expert-create-meet') ? 'form found' : 'form NOT found');
+                    window.initExpertCalendar();
+                    console.log('ExpertCalendar initialization called');
+                } else {
+                    console.error('initExpertCalendar function not found');
+                }
+            }, 500);
+        }
+
+        // Специальная инициализация для ClientCalendar
+        if (componentName === 'ClientCalendar') {
+            console.log('Initializing ClientCalendar page');
+            setTimeout(() => {
+                const viewButtons = document.querySelectorAll('.view-btn');
+                const dayView = document.querySelector('.calendar-day');
+                const weekView = document.querySelector('.calendar-week');
+                const monthView = document.querySelector('.calendar-month');
+
+                if (viewButtons.length && dayView && weekView && monthView) {
+                    console.log('ClientCalendar tab elements found, initializing...');
+                    
+                    // По умолчанию показываем day view
+                    dayView.style.display = 'table';
+                    weekView.style.display = 'none';
+                    monthView.style.display = 'none';
+
+                    // Добавляем обработчики для кнопок переключения
+                    viewButtons.forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            // Убираем активный класс у всех кнопок
+                            viewButtons.forEach(b => b.classList.remove('active'));
+                            // Добавляем активный класс к нажатой кнопке
+                            this.classList.add('active');
+                            
+                            const view = this.dataset.view;
+                            console.log('Switching to view:', view);
+                            
+                            // Скрываем все виды
+                            dayView.style.display = 'none';
+                            weekView.style.display = 'none';
+                            monthView.style.display = 'none';
+
+                            // Показываем выбранный вид
+                            switch(view) {
+                                case 'day':
+                                    dayView.style.display = 'table';
+                                    break;
+                                case 'week':
+                                    weekView.style.display = 'table';
+                                    break;
+                                case 'month':
+                                    monthView.style.display = 'table';
+                                    break;
+                            }
+                        });
+                    });
+                }
+            }, 100);
         }
 
         // Обработчики табов для ClientChat

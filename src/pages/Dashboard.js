@@ -1,13 +1,12 @@
 // Компонент Dashboard Page
 const Dashboard = (props = {}) => {
+    // Создаем breadcrumb для страницы Dashboard
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Dashboard' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--DASHBOARD-DIAGRAM-->
             <section class="dashboard">
                 <div class="container">

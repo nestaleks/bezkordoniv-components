@@ -51,14 +51,14 @@ const ClientPage = (props = {}) => {
     };
     
     const client = clientsData[clientId] || clientsData['1'];
+    
+    // Создаем breadcrumb для страницы ClientPage
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'ClientPage' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--MY EXPERTS-->
             <section class="client-page">
                 <div class="container">

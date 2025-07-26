@@ -1,13 +1,12 @@
 // Компонент ExpertWallet - гаманець експерта
 const ExpertWallet = (props = {}) => {
+    // Создаем breadcrumb для страницы ExpertWallet
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Wallet' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--Expert Wallet-->
             <section class="expert-wallet-page">
                 <div class="container">

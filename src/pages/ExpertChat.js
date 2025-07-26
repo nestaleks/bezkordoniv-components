@@ -1,13 +1,12 @@
 // Компонент ExpertChat - чат експерта
 const ExpertChat = (props = {}) => {
+    // Создаем breadcrumb для страницы ExpertChat
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Chat' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--EXPERT CHAT PAGE-->
             <section class="expert-chat">
                 <div class="container">

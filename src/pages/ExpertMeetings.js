@@ -1,13 +1,12 @@
 // Компонент ExpertMeetings - зустрічі експерта
 const ExpertMeetings = (props = {}) => {
+    // Создаем breadcrumb для страницы ExpertMeetings
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Meetings' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--expert-meetings-->
             <section class="expert-meetings">
                 <div class="container">
@@ -186,7 +185,7 @@ const ExpertMeetings = (props = {}) => {
                             </div>
                         </li>
                         <li class="expert-meetings-card">
-                            <a href="" class="meetings-card-header">
+                            <a href="/expert-meeting" data-link data-meeting-id="1" class="meetings-card-header">
                                 <div class="meetings-card-img">
                                     <img src="./src/img/icons/calendar-yellow.svg" alt="">
                                 </div>

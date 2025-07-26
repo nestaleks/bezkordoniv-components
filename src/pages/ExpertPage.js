@@ -1,13 +1,12 @@
 // Компонент ExpertPage - детальна сторінка експерта
 const ExpertPage = (props = {}) => {
+    // Создаем breadcrumb для страницы ExpertPage
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'ExpertPage' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <div class="to-prev-page">
                 <div class="container">
                     <a class="prev-page-btn" href="/experts" data-link>

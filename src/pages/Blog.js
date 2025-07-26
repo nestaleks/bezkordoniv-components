@@ -1,15 +1,14 @@
 // Компонент Blog Page
 const Blog = (props = {}) => {
+    // Создаем breadcrumb для страницы Blog
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Blog' }) : '';
+    
     return `
         <main class="main blog-page">
             <section class="section-lg mt-24 mb-24">
                 <div class="section-lg-inner">
                     <!--BREADCRUMB-->
-                    <nav class="breadcrumb">
-                        <div class="container">
-                            <!-- Breadcrumb will be generated automatically by JavaScript -->
-                        </div>
-                    </nav>
+                    ${breadcrumbComponent}
                     <!--BLOG-->
                     <div class="blog-page-inner">
                         <div class="blog-page-header">

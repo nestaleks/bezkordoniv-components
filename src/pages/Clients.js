@@ -1,13 +1,12 @@
 // Компонент Clients - список клієнтів
 const Clients = (props = {}) => {
+    // Создаем breadcrumb для страницы Clients
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Clients' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--MY EXPERTS-->
             <section class="clients">
                 <div class="container">
@@ -116,7 +115,7 @@ const Clients = (props = {}) => {
                             <div class="clients-content mb-12">
                                 <img class="clients-img mb-12" src="./src/img/expert-7.png" alt="">
                                 <a class="clients-name" href="/client" data-link data-client-id="1">Константин Вакуленко</a>
-                                <div class="clients-data">
+                                <div class="clients-data mb-20">
                                     <div class="clients-appoints highlight-pill">
                                         <img src="./src/img/icons/clients.svg" alt="">
                                         <p>12 <span>консультацій</span></p>
@@ -159,7 +158,7 @@ const Clients = (props = {}) => {
                             <div class="clients-content mb-12">
                                 <img class="clients-img mb-12" src="./src/img/expert-8.png" alt="">
                                 <a class="clients-name" href="/client" data-link data-client-id="2">Карина Мартиненко</a>
-                                <div class="clients-data">
+                                <div class="clients-data mb-20">
                                     <div class="clients-appoints highlight-pill">
                                         <img src="./src/img/icons/clients.svg" alt="">
                                         <p>12 <span>консультацій</span></p>
@@ -190,9 +189,9 @@ const Clients = (props = {}) => {
                                 <button class="clients-new-appointment button-primary">
                                     <p>Налаштувати Записи</p>
                                 </button>
-                                <button class="clients-write-message button-secondary">
+                                <a href="/expert-chat" data-link class="clients-write-message button-secondary">
                                     <p>Звʼязатись</p>
-                                </button>
+                                </a>
                                 <button class="clients-call button-secondary">
                                     <p>Дзвінок</p>
                                 </button>
@@ -202,7 +201,7 @@ const Clients = (props = {}) => {
                             <div class="clients-content mb-12">
                                 <img class="clients-img mb-12" src="./src/img/expert-9.png" alt="">
                                 <a class="clients-name" href="/client" data-link data-client-id="3">Іванна Поліщук</a>
-                                <div class="clients-data">
+                                <div class="clients-data mb-20">
                                     <div class="clients-appoints highlight-pill">
                                         <img src="./src/img/icons/clients.svg" alt="">
                                         <p>12 <span>консультацій</span></p>
@@ -233,9 +232,9 @@ const Clients = (props = {}) => {
                                 <button class="clients-new-appointment button-primary">
                                     <p>Налаштувати Записи</p>
                                 </button>
-                                <button class="clients-write-message button-secondary">
+                                <a href="/expert-chat" data-link class="clients-write-message button-secondary">
                                     <p>Звʼязатись</p>
-                                </button>
+                                </a>
                                 <button class="clients-call button-secondary">
                                     <p>Дзвінок</p>
                                 </button>
@@ -245,7 +244,7 @@ const Clients = (props = {}) => {
                             <div class="clients-content mb-12">
                                 <img class="clients-img mb-12" src="./src/img/expert-10.png" alt="">
                                 <a class="clients-name" href="/client" data-link data-client-id="4">Остап Шевченко</a>
-                                <div class="clients-data">
+                                <div class="clients-data mb-20">
                                     <div class="clients-appoints highlight-pill">
                                         <img src="./src/img/icons/clients.svg" alt="">
                                         <p>12 <span>консультацій</span></p>
@@ -276,9 +275,9 @@ const Clients = (props = {}) => {
                                 <button class="clients-new-appointment button-primary">
                                     <p>Налаштувати Записи</p>
                                 </button>
-                                <button class="clients-write-message button-secondary">
+                                <a href="/expert-chat" data-link class="clients-write-message button-secondary">
                                     <p>Звʼязатись</p>
-                                </button>
+                                </a>
                                 <button class="clients-call button-secondary">
                                     <p>Дзвінок</p>
                                 </button>

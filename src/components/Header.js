@@ -78,6 +78,17 @@ const Header = (props = {}) => {
                         <p>${logo}</p>
                     </a>
                     
+                    <!-- View Mode Toggle -->
+                    <div class="view-mode-toggle" data-view="expert">
+                        <div class="traffic-light-track">
+                            <div class="traffic-light-circle expert-mode"></div>
+                            <div class="traffic-light-labels">
+                                <span class="label-expert">Expert</span>
+                                <span class="label-client">Client</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- buttons for unauthorized users -->
                     <div class="header-if-logout" style="${isLoggedIn ? 'display: none;' : ''}">
                         <div class="header-buttons">
@@ -134,11 +145,6 @@ const Header = (props = {}) => {
                     </div>
                 </div>
                 
-                <!-- View Mode Toggle (positioned 20px below header) -->
-                <div class="view-mode-toggle" style="position: absolute; top: calc(100% + 20px); left: 50%; transform: translateX(-50%); z-index: 1000;">
-                    <button class="view-toggle-btn active" data-view="expert">ExpertView</button>
-                    <button class="view-toggle-btn" data-view="client">ClientView</button>
-                </div>
                 <!-- First divider line -->
                 <div class="header-divider"></div>
 
@@ -212,8 +218,14 @@ const Header = (props = {}) => {
                                 <p class="menu-item-text">Профіль</p>
                             </a>
                         </li>
-                        <li class="menu-item menu-for-all">
-                            <a href="/calendar" class="menu-link" data-link>
+                        <li class="menu-item menu-for-expert">
+                            <a href="/expert-calendar" class="menu-link" data-link>
+                                ${icons.calendar}
+                                <p class="menu-item-text">Календар</p>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-for-client">
+                            <a href="/client-calendar" class="menu-link" data-link>
                                 ${icons.calendar}
                                 <p class="menu-item-text">Календар</p>
                             </a>
@@ -238,7 +250,8 @@ const Header = (props = {}) => {
 // Function to initialize view toggle functionality
 Header.initViewToggle = function() {
     document.addEventListener('DOMContentLoaded', function() {
-        const toggleButtons = document.querySelectorAll('.view-toggle-btn');
+        const viewToggle = document.querySelector('.view-mode-toggle');
+        const trafficLightCircle = document.querySelector('.traffic-light-circle');
         const menuItems = document.querySelectorAll('.menu-item');
         
         function updateMenuVisibility(viewMode) {
@@ -259,18 +272,45 @@ Header.initViewToggle = function() {
             });
         }
         
-        toggleButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                toggleButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
+        function updateTrafficLight(viewMode) {
+            const labelExpert = document.querySelector('.label-expert');
+            const labelClient = document.querySelector('.label-client');
+            
+            if (viewMode === 'expert') {
+                trafficLightCircle.className = 'traffic-light-circle expert-mode';
+                if (labelExpert) {
+                    labelExpert.style.color = '#2E66E2';
+                    labelExpert.style.display = 'block';
+                }
+                if (labelClient) {
+                    labelClient.style.display = 'none';
+                }
+            } else {
+                trafficLightCircle.className = 'traffic-light-circle client-mode';
+                if (labelExpert) {
+                    labelExpert.style.display = 'none';
+                }
+                if (labelClient) {
+                    labelClient.style.color = '#2E66E2';
+                    labelClient.style.display = 'block';
+                }
+            }
+        }
+        
+        if (viewToggle) {
+            viewToggle.addEventListener('click', function() {
+                const currentView = this.getAttribute('data-view');
+                const newView = currentView === 'expert' ? 'client' : 'expert';
                 
-                const viewMode = this.getAttribute('data-view');
-                updateMenuVisibility(viewMode);
+                this.setAttribute('data-view', newView);
+                updateTrafficLight(newView);
+                updateMenuVisibility(newView);
             });
-        });
+        }
         
         // Initialize with expert view
         updateMenuVisibility('expert');
+        updateTrafficLight('expert');
     });
 };
 

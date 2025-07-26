@@ -1,32 +1,12 @@
 // Компонент Calendar Page
-const Calendar = (props = {}) => {
+const ClientCalendar = (props = {}) => {
+    // Создаем breadcrumb для страницы Calendar
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Calendar' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <ul class="breadcrumb-links">
-                        <li>
-                            <a href="#" class="breadcrumb-box">
-                                <svg width="20.000000" height="20.999512" viewBox="0 0 20 20.9995" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <path id="Vector" d="M13 19.99L13 11.99C13 11.73 12.89 11.47 12.7 11.29C12.51 11.1 12.26 10.99 12 10.99L8 10.99C7.73 10.99 7.48 11.1 7.29 11.29C7.1 11.47 7 11.73 7 11.99L7 19.99M1.18 8.15C1.3 7.89 1.48 7.65 1.7 7.47L8.7 1.47C9.06 1.16 9.52 1 10 1C10.47 1 10.93 1.16 11.29 1.47L18.29 7.47C18.51 7.65 18.69 7.89 18.81 8.15C18.93 8.42 19 8.7 19 8.99L19 17.99C19 18.52 18.78 19.03 18.41 19.41C18.03 19.78 17.53 19.99 17 19.99L3 19.99C2.46 19.99 1.96 19.78 1.58 19.41C1.21 19.03 1 18.52 1 17.99L1 8.99C0.99 8.7 1.06 8.42 1.18 8.15Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>/</li>
-                        <li>
-                            <div class="breadcrumb-box">
-                                <div class="breadcrumb-img">
-                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.33333 1.33337V4.00004M9.66667 1.33337V4.00004M1 6.66671H13M2.33333 2.66671H11.6667C12.403 2.66671 13 3.26366 13 4.00004V13.3334C13 14.0698 12.403 14.6667 11.6667 14.6667H2.33333C1.59695 14.6667 1 14.0698 1 13.3334V4.00004C1 3.26366 1.59695 2.66671 2.33333 2.66671Z" stroke="#2E66E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </div>
-                                <a href="#" class="breadcrumb-text">Календар</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!-- CALENDAR -->
             <section class="calendar">
                 <div class="container">
@@ -827,7 +807,7 @@ const Calendar = (props = {}) => {
                 const viewButtons = document.querySelectorAll('.view-btn');
                 const dayView = document.querySelector('.calendar-day');
                 const weekView = document.querySelector('.calendar-week');
-                const monthView = document.querySelector('.month-view');
+                const monthView = document.querySelector('.calendar-month');
                 const prevBtn = document.getElementById('prev-btn');
                 const nextBtn = document.getElementById('next-btn');
                 const periodBtn = document.getElementById('selected-period-btn');
@@ -941,5 +921,5 @@ const Calendar = (props = {}) => {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Calendar;
+    module.exports = ClientCalendar;
 }

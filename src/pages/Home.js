@@ -172,51 +172,46 @@ const Home = (props = {}) => {
                     </div>
                     <ul class="top-experts-list">
                         <li class="top-experts-card">
-                            <a href="#">
-                                <div class="top-experts-box mb-20">
-                                    <img class="top-experts-img" src="./src/img/expert-1.png" alt="">
-                                    <div class="top-experts-info">
-                                        <a class="top-experts-name" href="">
-                                            <p>Антон Багінський</p>
-                                        </a>
-                                        <div class="top-experts-amount">
-                                            <a class="top-experts-country highlight-pill" href="#">Німеччина</a>
-                                            <p class="top-experts-rating highlight-pill">4,5 / 5</p>
-                                        </div>
+                            <div class="top-experts-box mb-20">
+                                <img class="top-experts-img" src="./src/img/expert-1.png" alt="">
+                                <div class="top-experts-info">
+                                    <a class="top-experts-name" href="">
+                                        <p>Антон Багінський</p>
+                                    </a>
+                                    <div class="top-experts-amount">
+                                        <a class="top-experts-country highlight-pill" href="#">Німеччина</a>
+                                        <p class="top-experts-rating highlight-pill">4,5 / 5</p>
                                     </div>
                                 </div>
-                                <div class="top-experts-category">
-                                    <a class="expert-category-md" href="">
-                                        <p>Медицина</p>
-                                        <img src="./src/img/icons/ctgr-list-med.svg" alt="">
-                                    </a>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="top-experts-category">
+                                <a class="expert-category-md" href="">
+                                    <p>Медицина</p>
+                                    <img src="./src/img/icons/ctgr-list-med.svg" alt="">
+                                </a>
+                            </div>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
-                                <div class="top-experts-box mb-20">
-                                    <img class="top-experts-img" src="./src/img/expert-2.png" alt="">
-                                    <div class="top-experts-info">
-                                        <a class="top-experts-name" href="">
-                                            <p>Андрій Романів</p>
-                                        </a>
-                                        <div class="top-experts-amount">
-                                            <a class="top-experts-country highlight-pill" href="#">Німеччина</a>
-                                            <p class="top-experts-rating highlight-pill">4,5 / 5</p>
-                                        </div>
+                            <div class="top-experts-box mb-20">
+                                <img class="top-experts-img" src="./src/img/expert-2.png" alt="">
+                                <div class="top-experts-info">
+                                    <a class="top-experts-name" href="">
+                                        <p>Андрій Романів</p>
+                                    </a>
+                                    <div class="top-experts-amount">
+                                        <a class="top-experts-country highlight-pill" href="#">Німеччина</a>
+                                        <p class="top-experts-rating highlight-pill">4,5 / 5</p>
                                     </div>
                                 </div>
-                                <div class="top-experts-category">
-                                    <a class="expert-category-md" href="">
-                                        <p>Технічні експерти</p>
-                                        <img src="./src/img/icons/ctgr-list-tech.svg" alt="">
-                                    </a>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="top-experts-category">
+                                <a class="expert-category-md" href="">
+                                    <p>Технічні експерти</p>
+                                    <img src="./src/img/icons/ctgr-list-tech.svg" alt="">
+                                </a>
+                            </div>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
                                 <div class="top-experts-box mb-20">
                                     <img class="top-experts-img" src="./src/img/expert-3.png" alt="">
                                     <div class="top-experts-info">
@@ -235,10 +230,8 @@ const Home = (props = {}) => {
                                         <img src="./src/img/icons/ctgr-list-design.svg" alt="">
                                     </a>
                                 </div>
-                            </a>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
                                 <div class="top-experts-box mb-20">
                                     <img class="top-experts-img" src="./src/img/expert-4.png" alt="">
                                     <div class="top-experts-info">
@@ -257,10 +250,8 @@ const Home = (props = {}) => {
                                         <img src="./src/img/icons/ctgr-list-law.svg" alt="">
                                     </a>
                                 </div>
-                            </a>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
                                 <div class="top-experts-box mb-20">
                                     <img class="top-experts-img" src="./src/img/expert-5.png" alt="">
                                     <div class="top-experts-info">
@@ -279,10 +270,8 @@ const Home = (props = {}) => {
                                         <img src="./src/img/icons/ctgr-list-nails.svg" alt="">
                                     </a>
                                 </div>
-                            </a>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
                                 <div class="top-experts-box mb-20">
                                     <img class="top-experts-img" src="./src/img/expert-6.png" alt="">
                                     <div class="top-experts-info">
@@ -301,10 +290,8 @@ const Home = (props = {}) => {
                                         <img src="./src/img/icons/ctgr-list-copywriter.svg" alt="">
                                     </a>
                                 </div>
-                            </a>
                         </li>
                         <li class="top-experts-card">
-                            <a href="#">
                                 <div class="top-experts-box mb-20">
                                     <img class="top-experts-img" src="./src/img/expert-7.png" alt="">
                                     <div class="top-experts-info">
@@ -323,7 +310,6 @@ const Home = (props = {}) => {
                                         <img src="./src/img/icons/ctgr-list-events.svg" alt="">
                                     </a>
                                 </div>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -414,7 +400,7 @@ const Home = (props = {}) => {
             <!--BLOG-->
             <section class="main-blog section-lg" id="blog">
                 <div class="section-lg-inner">
-                    <div class="main-blog-header">
+                    <div class="main-blog-header mb-20">
                         <p class="section-title">Блог</p>
                         <div class="main-blog-pagination">
                             <svg class="main-blog-arrow arrow-prev" width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -428,11 +414,11 @@ const Home = (props = {}) => {
                     </div>
                     <ul class="main-blog-list">
                         <li class="main-blog-item">
-                            <a href="">
+                            <a href="#" data-link-blog data-post-id="1">
                                 <div class="main-blog-content">
                                     <p class="main-blog-title">Як отримати максимум користі від онлайн-консультації з лікарем: інструкція для пацієнтів</p>
                                     <p class="main-blog-text">Практична стаття, яка допоможе користувачам підготуватися до консультації, правильно описати симптоми, підготувати необхідні док</p>
-                                    <a class="main-blog-link" href="">
+                                    <a class="main-blog-link" href="#" data-link-blog data-post-id="1">
                                         <p>Детальніше</p>
                                     </a>
                                 </div>
@@ -440,11 +426,11 @@ const Home = (props = {}) => {
                             </a>
                         </li>
                         <li class="main-blog-item">
-                            <a href="">
+                            <a href="#" data-link-blog data-post-id="2">
                                 <div class="main-blog-content">
                                     <p class="main-blog-title">Юридичні питання українців за кордоном: 5 найпоширеніших проблем та їхні рішення</p>
                                     <p class="main-blog-text">Інформативна стаття, яка висвітлює актуальні правові виклики для українців в інших країнах (документи, працевлаштування, податки тощо).</p>
-                                    <a class="main-blog-link" href="">
+                                    <a class="main-blog-link" href="#" data-link-blog data-post-id="2">
                                         <p>Детальніше</p>
                                     </a>
                                 </div>
@@ -452,11 +438,11 @@ const Home = (props = {}) => {
                             </a>
                         </li>
                         <li class="main-blog-item">
-                            <a href="">
+                            <a href="#" data-link-blog data-post-id="3">
                                 <div class="main-blog-content">
                                     <p class="main-blog-title">Адаптація за кордоном: психологічні поради для українців на новому місці</p>
                                     <p class="main-blog-text">Корисна стаття з практичними порадами від психологів платформи щодо подолання культурного шоку, будування нового соціального кола, збереження зв'язку з рідною культу</p>
-                                    <a class="main-blog-link" href="">
+                                    <a class="main-blog-link" href="#" data-link-blog data-post-id="3">
                                         <p>Детальніше</p>
                                     </a>
                                 </div>
@@ -464,11 +450,11 @@ const Home = (props = {}) => {
                             </a>
                         </li>
                         <li class="main-blog-item">
-                            <a href="">
+                            <a href="#" data-link-blog data-post-id="4">
                                 <div class="main-blog-content">
                                     <p class="main-blog-title">Юридичні питання українців за кордоном: 5 найпоширеніших проблем та їхні рішення</p>
                                     <p class="main-blog-text">Інформативна стаття, яка висвітлює актуальні правові виклики для українців в інших країнах (документи, працевлаштування, податки тощо).</p>
-                                    <a class="main-blog-link" href="">
+                                    <a class="main-blog-link" href="#" data-link-blog data-post-id="4">
                                         <p>Детальніше</p>
                                     </a>
                                 </div>
@@ -476,11 +462,11 @@ const Home = (props = {}) => {
                             </a>
                         </li>
                         <li class="main-blog-item">
-                            <a href="">
+                            <a href="#" data-link-blog data-post-id="5">
                                 <div class="main-blog-content">
                                     <p class="main-blog-title">Адаптація за кордоном: психологічні поради для українців на новому місці</p>
                                     <p class="main-blog-text">Корисна стаття з практичними порадами від психологів платформи щодо подолання культурного шоку, будування нового соціального кола, збереження зв'язку з рідною культу</p>
-                                    <a class="main-blog-link" href="">
+                                    <a class="main-blog-link" href="#" data-link-blog data-post-id="5">
                                         <p>Детальніше</p>
                                     </a>
                                 </div>
@@ -490,33 +476,59 @@ const Home = (props = {}) => {
                     </ul>
                 </div>
             </section>
+            <!--ABOUT SOCIAL-->
+            <section class="about-social section-lg">
+                <div class="section-lg-inner">
+                    <div class="about-social-inner">
+                        <p class="section-title">Слідкуйте за нами</p>
+                        <div class="about-social-links">
+                            <a class="about-social-link" href="">
+                                <img src="./src/img/icons/telegram-color.svg" alt="">
+                                <p>Telegram</p>
+                            </a>
+                            <a class="about-social-link" href="">
+                                <img src="./src/img/icons/instagram-color.svg" alt="">
+                                <p>Instagram</p>
+                            </a>
+                            <a class="about-social-link" href="">
+                                <img src="./src/img/icons/facebook-color.svg" alt="">
+                                <p>Facebook</p>
+                            </a>
+                            <a class="about-social-link" href="">
+                                <img src="./src/img/icons/linkedin-color.svg" alt="">
+                                <p>LinkedIn</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--ADVANTAGES-->
             <section class="advantages section-lg">
                 <div class="section-lg-inner">
                     <div class="advantages-inner">
-                        <p class="section-title">Переваги онлайн консультації</p>
-                        <div class="advantages-banners mt-20 mb-20">
-                            <div class="advantages-banner">
-                                <img class="advantages-banner-img" src="./src/img/advantages-1.svg" alt="">
-                                <p class="advantages-banner-title">Доступність</p>
-                                <p class="advantages-banner-text">Консультації з українськими спеціалістами онлайн, де б ви не були</p>
-                            </div>
-                            <div class="advantages-banner">
-                                <img class="advantages-banner-img" src="./src/img/advantages-2.svg" alt="">
-                                <p class="advantages-banner-title">Мовна підтримка</p>
-                                <p class="advantages-banner-text">Спілкування з будь-яким експертом рідною українською мовою</p>
-                            </div>
-                            <div class="advantages-banner">
-                                <img class="advantages-banner-img" src="./src/img/advantages-3.svg" alt="">
-                                <p class="advantages-banner-title">Зручність</p>
-                                <p class="advantages-banner-text">Простий та зручний інтерфейс для запису на консультації</p>
-                            </div>
-                            <div class="advantages-banner">
-                                <img class="advantages-banner-img" src="./src/img/advantages-4.svg" alt="">
-                                <p class="advantages-banner-title">Гнучкість</p>
-                                <p class="advantages-banner-text">Платформа постійно розширюється, додаючи нові послуги</p>
-                            </div>
-                        </div>
+<!--                        <p class="section-title">Переваги онлайн консультації</p>-->
+<!--                        <div class="advantages-banners mt-20 mb-20">-->
+<!--                            <div class="advantages-banner">-->
+<!--                                <img class="advantages-banner-img" src="./src/img/advantages-1.svg" alt="">-->
+<!--                                <p class="advantages-banner-title">Доступність</p>-->
+<!--                                <p class="advantages-banner-text">Консультації з українськими спеціалістами онлайн, де б ви не були</p>-->
+<!--                            </div>-->
+<!--                            <div class="advantages-banner">-->
+<!--                                <img class="advantages-banner-img" src="./src/img/advantages-2.svg" alt="">-->
+<!--                                <p class="advantages-banner-title">Мовна підтримка</p>-->
+<!--                                <p class="advantages-banner-text">Спілкування з будь-яким експертом рідною українською мовою</p>-->
+<!--                            </div>-->
+<!--                            <div class="advantages-banner">-->
+<!--                                <img class="advantages-banner-img" src="./src/img/advantages-3.svg" alt="">-->
+<!--                                <p class="advantages-banner-title">Зручність</p>-->
+<!--                                <p class="advantages-banner-text">Простий та зручний інтерфейс для запису на консультації</p>-->
+<!--                            </div>-->
+<!--                            <div class="advantages-banner">-->
+<!--                                <img class="advantages-banner-img" src="./src/img/advantages-4.svg" alt="">-->
+<!--                                <p class="advantages-banner-title">Гнучкість</p>-->
+<!--                                <p class="advantages-banner-text">Платформа постійно розширюється, додаючи нові послуги</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <div class="advantages-numbers mb-20">
                             <div class="advantages-number">
                                 <p class="advantages-number-title">+12600</p>

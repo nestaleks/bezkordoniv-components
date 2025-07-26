@@ -1,13 +1,12 @@
 // Компонент Experts Page
 const Experts = (props = {}) => {
+    // Создаем breadcrumb для страницы Experts
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Experts' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--MY EXPERTS-->
             <section class="experts">
                 <div class="container">
@@ -32,7 +31,7 @@ const Experts = (props = {}) => {
                     </div>
                     <!--TOP EXPERTS-->
                     <section class="top-experts" style="background-color: transparent; margin-bottom: 0;">
-                        <div class="top-experts-header">
+                        <div class="top-experts-header mb-20">
                             <p class="section-title">Топ Експерти</p>
                             <div class="top-experts-pagination">
                                 <svg class="top-experts-arrow arrow-prev" width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -362,9 +361,9 @@ const Experts = (props = {}) => {
                                 <button class="experts-new-appointment button-primary">
                                     <p>Записатись</p>
                                 </button>
-                                <button class="experts-write-message button-secondary">
+                                <a href="/client-chat" data-link class="experts-write-message button-secondary">
                                     <p>Звʼязатись</p>
-                                </button>
+                                </a>
                             </div>
                             <div class="experts-info">
                                 <div class="experts-info-speciality">
@@ -433,9 +432,9 @@ const Experts = (props = {}) => {
                                 <button class="experts-new-appointment button-primary">
                                     <p>Записатись</p>
                                 </button>
-                                <button class="experts-write-message button-secondary">
+                                <a href="/client-chat" data-link class="experts-write-message button-secondary">
                                     <p>Звʼязатись</p>
-                                </button>
+                                </a>
                             </div>
                             <div class="experts-info">
                                 <div class="experts-info-speciality">

@@ -1,13 +1,12 @@
 // Компонент ExpertProfile - особистий профіль експерта
 const ExpertProfile = (props = {}) => {
+    // Создаем breadcrumb для страницы ExpertProfile
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Profile' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--FAQ-->
              <section class="expert-profile-page">
                 <div class="container">

@@ -1,4 +1,8 @@
 .blog-page{
+    background-color: var(--background);
+}
+
+.blog-page .section-lg{
     background-color: var(--white-100);
 }
 

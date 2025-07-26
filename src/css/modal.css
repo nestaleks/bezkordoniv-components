@@ -124,6 +124,7 @@
     border: 1px solid var(--secondary-05);
     border-radius: var(--radius-sm);
     font-size: 14px;
+    font-family: Circe;
     transition: border-color 0.3s;
 }
 
@@ -1061,7 +1062,7 @@
 .modal-request-withdraw-body .form-group .form-select{
     width: 100%;
     border: 1px solid var(--black-10);
-    
+    font-family: Circe;
 }
 
 .modal-request-payments-setting {

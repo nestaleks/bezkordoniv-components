@@ -1,13 +1,12 @@
 // Компонент ClientWallet - гаманець клієнта
 const ClientWallet = (props = {}) => {
+    // Создаем breadcrumb для страницы ClientWallet
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Wallet' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--Client Wallet-->
              <section class="client-wallet-page">
                 <div class="container">

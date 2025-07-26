@@ -68,7 +68,7 @@
     padding: 9px 26px 6px;
 }
 .header-button-support{
-    padding: 9px 26px 6px 16px;
+    padding: 9px 16px 6px 16px;
 }
 .header-button-login{
     padding: 9px 30px 6px 16px;
@@ -335,54 +335,158 @@
     }
 }
 
-/* View Mode Toggle Styles */
+@media screen and (max-width: 480px) {
+    .header-logo p {
+        display: none;
+    }
+    
+}
+
+/* View Mode Toggle Styles - Traffic Light */
 .view-mode-toggle {
     display: flex;
-    background-color: var(--red-08);
-    border: 1px solid #E7E7E7;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
+    align-items: center;
+    background-color: var(--white-100);
+    border: 1px solid var(--secondary-08);
+    border-radius: 12px;
+    padding: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.view-toggle-btn {
-    padding: 8px 16px;
-    background-color: transparent;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--black-70);
     cursor: pointer;
     transition: all 0.3s ease;
-    border-right: 1px solid #E7E7E7;
+    width: auto;
 }
 
-.view-toggle-btn:last-child {
-    border-right: none;
+.view-mode-toggle:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.view-toggle-btn:hover {
-    background-color: var(--green-06);
-    color: var(--primary-05);
+.traffic-light-track {
+    position: relative;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    width: 65px;
 }
 
-.view-toggle-btn.active {
-    background-color: var(--green-01);
-    color: var(--white-100);
+.traffic-light-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.traffic-light-circle.expert-mode {
+    background-color: #22c55e; /* Green color for expert */
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.5);
+    left: 0;
+}
+
+.traffic-light-circle.client-mode {
+    background-color: #ef4444; /* Red color for client */
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.5);
+    left: 0;
+}
+
+.traffic-light-labels {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-top: 2px;
+    right: 0;
+}
+
+.label-expert,
+.label-client {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black-100);
+    user-select: none;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.view-mode-toggle[data-view="expert"] .label-expert {
+    right: 3px;
+}
+
+.view-mode-toggle[data-view="expert"] .label-client {
+    display: none;
+}
+
+.view-mode-toggle[data-view="client"] .label-client {
+    right: 3px;
+}
+
+.view-mode-toggle[data-view="client"] .label-expert {
+    display: none;
 }
 
 @media (max-width: 768px) {
     .view-mode-toggle {
-        position: fixed !important;
-        top: 76px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        z-index: 1001 !important;
+        margin-right: 10px;
     }
     
-    .view-toggle-btn {
-        padding: 6px 12px;
-        font-size: 10px;
+    .traffic-light-track {
+        width: 60px;
+        height: 26px;
+    }
+    
+    .label-expert,
+    .label-client {
+        font-size: 8px;
+    }
+    
+    .traffic-light-circle {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .view-mode-toggle[data-view="expert"] .label-expert {
+        right: 4px;
+    }
+    
+    .view-mode-toggle[data-view="client"] .label-client {
+        left: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .view-mode-toggle {
+        margin-right: 8px;
+        padding: 3px;
+        border-radius: 10px;
+    }
+    
+    .traffic-light-track {
+        width: 50px;
+        height: 22px;
+    }
+    
+    .traffic-light-circle {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .label-expert,
+    .label-client {
+        font-size: 7px;
+        font-weight: 700;
+    }
+    
+    .view-mode-toggle[data-view="expert"] .label-expert {
+        right: 3px;
+    }
+    
+    .view-mode-toggle[data-view="client"] .label-client {
+        left: 3px;
     }
 }

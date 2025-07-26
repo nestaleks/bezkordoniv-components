@@ -1,13 +1,12 @@
 // Компонент ClientMeeting - окрема зустріч клієнта
 const ClientMeeting = (props = {}) => {
+    // Создаем breadcrumb для страницы ClientMeeting
+    const breadcrumbComponent = typeof Breadcrumb !== 'undefined' ? Breadcrumb({ currentPage: 'Meetings' }) : '';
+    
     return `
         <main class="main">
             <!--BREADCRUMB-->
-            <nav class="breadcrumb">
-                <div class="container">
-                    <!-- Breadcrumb will be generated automatically by JavaScript -->
-                </div>
-            </nav>
+            ${breadcrumbComponent}
             <!--client-meeting-->
              <section class="client-meeting">
                 <div class="container">
