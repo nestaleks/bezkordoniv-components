@@ -1221,13 +1221,13 @@ const ExpertCalendar = (props = {}) => {
                                     </div>
                                 </div>
                                 <div class="calendar-settings-buttons">
-                                <button class="calendar-settings-cancel button-secondary">
-                                    <p>Відмінити</p>
-                                </button>
-                                <button class="calendar-settings-save button-primary">
-                                    <p>Зберегти</p>
-                                </button>
-                            </div>
+                                    <button class="calendar-settings-cancel button-secondary">
+                                        <p>Відмінити</p>
+                                    </button>
+                                    <button class="calendar-settings-save button-primary">
+                                        <p>Зберегти</p>
+                                    </button>
+                                </div>
                             </div>
                             <div class="calendar-settings-templates">
                                 <div class="calendar-settings-template-1">
@@ -1365,7 +1365,84 @@ const ExpertCalendar = (props = {}) => {
                             </div>
                         </div>
                         <div class="calendar-settings-feedback">
-                            
+                            <div class="calendar-settings-block-row">
+                                <div class="calendar-settings-auto-confirmation">
+                                    <div class="calendar-settings-header">
+                                        <img src="./src/img/icons/agree.svg" alt="">
+                                        <div class="calendar-settings-desc">
+                                            <p>Aвтоматичне підтвердження</p>
+                                            <p>Запис буде створено автоматично, якщо ви маєте доступний час</p>
+                                        </div>
+                                        <div class="agree-toggle">
+                                            <input type="checkbox" id="agree-toggle-checkbox" class="toggle-checkbox">
+                                            <label for="agree-toggle-checkbox" class="toggle-label">
+                                                <span class="toggle-slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select">
+                                            <option value="" disabled selected>Оберіть категорію</option>
+                                            <option value="all">Для всіх</option>
+                                            <option value="verify">Для верифікованих</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="calendar-settings-payment-time">
+                                    <div class="calendar-settings-header">
+                                        <img src="./src/img/icons/time-gray.svg" alt="">
+                                        <div class="calendar-settings-desc">
+                                            <p>Відведений час на оплату</p>
+                                            <p>Встановіть час на оплату</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" style="margin-top: auto;">
+                                            <option value="" disabled selected>Вкажіть час</option>
+                                            <option value="10">10 хвилин</option>
+                                            <option value="15">15 хвилин</option>
+                                            <option value="20">20 хвилин</option>
+                                            <option value="30">30 хвилин</option>
+                                            <option value="60">1 година</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-settings-sync">
+                                <div class="calendar-settings-header">
+                                    <img src="./src/img/icons/link-gray.svg" alt="">
+                                    <div class="calendar-settings-desc">
+                                        <p>Синхронізація з зовнішніми календарями</p>
+                                        <p>Додайте посилання</p>
+                                    </div>
+                                </div>
+                                <div class="calendar-settings-sync-links">
+                                    <div class="calendar-settings-sync-apple">
+                                        <div class="calendar-settings-sync-title">
+                                            <img src="./src/img/icons/apple.svg" alt="">
+                                            <p>Apple Calendar</p>                                        </div>
+                                        <button class="calendar-settings-sync-delete">
+                                            <img src="./src/img/icons/cancel.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="calendar-settings-sync-apple">
+                                        <div class="calendar-settings-sync-title">
+                                            <img src="./src/img/icons/google.svg" alt="">
+                                            <p>Google Calendar</p>                                        </div>
+                                        <button class="calendar-settings-sync-delete">
+                                            <img src="./src/img/icons/cancel.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-settings-sync-buttons">
+                                <button class="calendar-settings-sync-cancel button-secondary">
+                                    <p>Відмінити</p>
+                                </button>
+                                <button class="calendar-settings-sync-save button-primary">
+                                    <p>Створити</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

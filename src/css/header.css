@@ -449,23 +449,9 @@
         width: 18px;
         height: 18px;
     }
-    
-    .view-mode-toggle[data-view="expert"] .label-expert {
-        right: 4px;
-    }
-    
-    .view-mode-toggle[data-view="client"] .label-client {
-        left: 4px;
-    }
 }
 
 @media (max-width: 480px) {
-    .view-mode-toggle {
-        margin-right: 8px;
-        padding: 3px;
-        border-radius: 10px;
-    }
-    
     .traffic-light-track {
         width: 50px;
         height: 22px;
@@ -474,19 +460,5 @@
     .traffic-light-circle {
         width: 16px;
         height: 16px;
-    }
-    
-    .label-expert,
-    .label-client {
-        font-size: 7px;
-        font-weight: 700;
-    }
-    
-    .view-mode-toggle[data-view="expert"] .label-expert {
-        right: 3px;
-    }
-    
-    .view-mode-toggle[data-view="client"] .label-client {
-        left: 3px;
     }
 }

@@ -1070,17 +1070,143 @@ button:hover {
 }
 
 
+/*CALENDAR SETTINGS FEEDBACK*/
+.calendar-settings-feedback{
+    border-radius: var(--radius-md);
+    border: 1px solid var(--black-10);
+    background-color: var(--white-100);
+}
 
+.calendar-settings-auto-confirmation{
+    width: 50%;
+    border-right: 1px solid var(--black-10);
+}
 
+.calendar-settings-auto-confirmation .form-group{
+    padding: 0 12px 12px 12px;
+}
 
+.calendar-settings-payment-time{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 
+.calendar-settings-payment-time .form-group{
+    padding: 0 12px 12px 12px;
+}
 
+/* Toggle Switch Styles */
+.agree-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 
+.toggle-checkbox {
+    display: none;
+}
 
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 14px;
+    cursor: pointer;
+}
 
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dc3545;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
 
+.toggle-slider:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    left: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
+.toggle-checkbox:checked + .toggle-label .toggle-slider {
+    background-color: #28a745;
+}
 
+.toggle-checkbox:checked + .toggle-label .toggle-slider:before {
+    transform: translateX(11px);
+}
+
+.calendar-settings-sync{
+    border-bottom: 1px solid var(--black-10);
+}
+
+.calendar-settings-sync-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+}
+
+.calendar-settings-sync-apple,
+.calendar-settings-sync-google{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.calendar-settings-sync-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 12px;
+    width: 100%;
+    border-radius: var(--radius-md);
+    background-color: var(--background);
+    border: 1px solid var(--black-10);
+}
+
+.calendar-settings-sync-apple p,
+.calendar-settings-sync-google p{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    color: var(--black-50);
+}
+
+.calendar-settings-sync-delete{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.calendar-settings-sync-delete img{
+    margin-top: 3px;
+}
+
+.calendar-settings-sync-buttons{
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+}
+
+.calendar-settings-sync-cancel,
+.calendar-settings-sync-save{
+    width: 100%;
+    padding: 10px 26px;
+}
 
 
 
@@ -1126,20 +1252,6 @@ button:hover {
         gap: 20px;
     }
     
-    .calendar-settings-block-row {
-        flex-direction: column;
-    }
-    
-    .calendar-settings-price-first,
-    .calendar-settings-price-next {
-        border-right: none;
-        border-bottom: 1px solid var(--black-10);
-    }
-    
-    .calendar-settings-price-next {
-        border-bottom: none;
-    }
-    
     .calendar-settings-duration,
     .calendar-settings-buffer {
         width: 100%;
@@ -1174,6 +1286,27 @@ button:hover {
     }
     
     .calendar-settings-template-files {
+        border-bottom: none;
+    }
+    
+    .calendar-settings-price-first,
+    .calendar-settings-price-next {
+        border-right: none;
+        border-bottom: 1px solid var(--black-10);
+    }
+    
+    .calendar-settings-price-next {
+        border-bottom: none;
+    }
+    
+    .calendar-settings-auto-confirmation,
+    .calendar-settings-payment-time {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--black-10);
+    }
+    
+    .calendar-settings-payment-time {
         border-bottom: none;
     }
 
@@ -1238,6 +1371,88 @@ button:hover {
         line-height: 12px;
     }
     
+    /* Адаптация формы создания встречи */
+    .expert-create-meet-header {
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .expert-create-meet-header img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .expert-create-meet-desc p:first-child {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .expert-create-meet-desc p:last-child {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .form-group {
+        padding: 0 8px 8px 8px !important;
+    }
+    
+    .expert-create-meet-title .form-group {
+        padding: 8px !important;
+    }
+    
+    .select-selected,
+    .form-input,
+    .form-select {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .select-selected.has-selection {
+        padding: 4px;
+        padding-right: 30px;
+    }
+    
+    .select-option {
+        padding: 4px;
+        font-size: 13px;
+    }
+    
+    .select-option img,
+    .select-selected img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .create-meet-toolbar {
+        padding: 6px 8px;
+    }
+    
+    .create-meet-toolbar button {
+        padding: 3px;
+    }
+    
+    .create-meet-toolbar img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .expert-create-meet-note .experience-textarea {
+        min-height: 80px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .expert-create-meet-buttons {
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .expert-create-meet-cancel,
+    .expert-create-meet-save {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
     /* Calendar Settings Mobile */
     .calendar-settings-header {
         padding: 8px;
@@ -1263,7 +1478,9 @@ button:hover {
     .calendar-settings-price-first .form-group,
     .calendar-settings-price-next .form-group,
     .calendar-settings-duration .form-group,
-    .calendar-settings-buffer .form-group {
+    .calendar-settings-buffer .form-group,
+    .calendar-settings-auto-confirmation .form-group,
+    .calendar-settings-payment-time .form-group {
         padding: 0 8px 8px 8px !important;
     }
     
@@ -1316,13 +1533,16 @@ button:hover {
         height: 12px;
     }
     
-    .calendar-settings-buttons {
+    .calendar-settings-buttons,
+    .calendar-settings-sync-buttons {
         padding: 8px;
         gap: 8px;
     }
     
     .calendar-settings-cancel,
-    .calendar-settings-save {
+    .calendar-settings-save,
+    .calendar-settings-sync-cancel,
+    .calendar-settings-sync-save {
         padding: 8px 16px;
         font-size: 12px;
     }
@@ -1355,6 +1575,7 @@ button:hover {
         font-size: 12px;
         line-height: 18px;
     }
+
 }
 
 @media (max-width: 560px) {
@@ -1369,10 +1590,12 @@ button:hover {
         flex-direction: column;
         gap: 12px;
     }
+    .calendar-settings-block-row {
+        flex-direction: column;
+    }
 }
 
 /* Маленькие мобильные экраны */
-
 @media (max-width: 480px) {
     
     .nav-buttons {
@@ -1452,12 +1675,7 @@ button:hover {
     }
     
     /* Calendar Settings Small Mobile */
-    .calendar-settings-header {
-        padding: 6px;
-        gap: 6px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
     
     .calendar-settings-header img {
         width: 14px;
@@ -1598,93 +1816,8 @@ button:hover {
         font-size: 9px;
         line-height: 12px;
     }
-}
-
-/* Адаптация формы создания встречи */
-@media (max-width: 768px) {
-    .expert-create-meet-header {
-        padding: 8px;
-        gap: 8px;
-    }
     
-    .expert-create-meet-header img {
-        width: 16px;
-        height: 16px;
-    }
-    
-    .expert-create-meet-desc p:first-child {
-        font-size: 12px;
-        line-height: 18px;
-    }
-    
-    .expert-create-meet-desc p:last-child {
-        font-size: 11px;
-        line-height: 16px;
-    }
-    
-    .form-group {
-        padding: 0 8px 8px 8px !important;
-    }
-    
-    .expert-create-meet-title .form-group {
-        padding: 8px !important;
-    }
-    
-    .select-selected,
-    .form-input,
-    .form-select {
-        padding: 10px;
-        font-size: 13px;
-    }
-    
-    .select-selected.has-selection {
-        padding: 4px;
-        padding-right: 30px;
-    }
-    
-    .select-option {
-        padding: 4px;
-        font-size: 13px;
-    }
-    
-    .select-option img,
-    .select-selected img {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .create-meet-toolbar {
-        padding: 6px 8px;
-    }
-    
-    .create-meet-toolbar button {
-        padding: 3px;
-    }
-    
-    .create-meet-toolbar img {
-        width: 12px;
-        height: 12px;
-    }
-    
-    .expert-create-meet-note .experience-textarea {
-        min-height: 80px;
-        padding: 8px;
-        font-size: 13px;
-    }
-    
-    .expert-create-meet-buttons {
-        padding: 8px;
-        gap: 8px;
-    }
-    
-    .expert-create-meet-cancel,
-    .expert-create-meet-save {
-        padding: 8px 16px;
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 480px) {
+    /* Адаптация формы создания встречи для маленьких экранов */
     .expert-create-meet-buttons {
         flex-direction: column;
     }
@@ -1709,3 +1842,4 @@ button:hover {
         height: 20px;
     }
 }
+
